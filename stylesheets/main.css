@@ -1,0 +1,241 @@
+.main-grid{
+  display: block;
+  border-color: #545454;
+  margin: 25px;
+  padding: 5px;
+  background-color: #fdeee7;
+  border-radius: 20px;
+  width: 96%;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ingredients-grid{
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #eae4e1;
+  border-radius: 5px;
+}
+
+.water-phase {
+  background-image: url("https://makingskincare.com/wp-content/uploads/2020/04/cropped-110-x-100.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #bfc1d1;
+  background-blend-mode: lighten;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  width: 10%;
+}
+
+.oil-phase {
+  background-image: url("https://makingskincare.com/wp-content/uploads/2020/04/cropped-110-x-100.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ced4c5;
+  background-blend-mode: lighten;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cooldown-phase {
+  background-image: url("https://makingskincare.com/wp-content/uploads/2020/04/cropped-110-x-100.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #d39595;
+  background-blend-mode: lighten;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calculator-buttons {
+  margin: 10px 25px 15px 560px;
+}
+
+.user-filled-cells  {
+  background-color: white;
+  border-radius: none;
+}
+
+.ingredient-text-editable{
+  width: 520px;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.water-rows{
+  background-color: #bfc1d1;
+}
+
+.oil-rows{
+  background-color: #ced4c5;
+}
+
+.cooldown-rows{
+  background-color: #d39595;
+}
+
+.footer{
+  text-align: right;
+}
+
+.phases-span{
+  background-color: #E1F4FA;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+
+h2 {
+  color: #545454;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+p {
+  margin-left: 18px;
+  margin-bottom: 1px;
+  padding-left: 10px;
+}
+
+label{
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  background-color: #fff;
+  color: #000;
+  border-style: none;
+  height: 15px;
+  width: 25px;
+}
+
+input#fname {
+  width: 500px;
+  height: 15px;
+  margin: 5px;
+}
+
+input#calculator-date {
+  width: 105px;
+  margin: 5px 5px 5px 87px;
+}
+
+input#batch-size{
+  margin-left: 59px;
+  width: 35px;
+}
+
+input#euro-radio{
+  margin-left: 50px;
+  width: 35px;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 10px;
+    margin: 5px 5px 5px 10px;
+}
+
+input[type=button] {
+    width: 60px;
+    height: 20px;
+    margin-top: 25px;
+    margin-right: 5px;
+    background-color: #5f6c7a;
+    border-radius: 4px;
+    color: #fff;
+}
+
+input[type=button]:focus {
+  background-color: ##d6dbe0;
+  border: solid 2px black;
+}
+
+input:disabled{
+  background-color: #cbd1da;
+  color: #cccccc;
+}
+
+select {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 1px;
+  margin: 5px;
+}
+
+img{
+  float: right;
+  padding-right: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+}
+
+th {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #9099a4;
+  border-radius: 3px;
+}
+
+tr {
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+    background: rgba(112, 112, 112, 0.1);
+}
+
+td {
+  border-radius: 1px;
+  font-size: 10px;
+  padding: 5px;
+}
+
+#myform {
+  margin-left: 5px;
+  margin-top: 10px;
+  width: auto;
+}
+
+#product-skin-type {
+  width: 190px;
+  height: 15px;
+  margin-left: 12px;
+  border-style: none;
+}
+
+#emulsifier-blend {
+  border-style: none;
+}
+
+#total-row {
+  font-size: 9px;
+  font-weight: bold;
+  background-color: #9099a4;
+  text-align: center;
+  font-size: 11px;
+}
+
+#total_percentage, #total_batch, #total_ingredient_cost, #total_formula_cost {
+  font-weight: bold;
+}
+
+
+
+
+input[placeholder] { text-overflow: ellipsis; }
+::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
+input:-moz-placeholder { text-overflow: ellipsis; }
