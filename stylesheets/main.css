@@ -61,7 +61,7 @@
 }
 
 .ingredient-text-editable{
-  width: 520px;
+  width: 370px;
   text-align: left;
   text-overflow: ellipsis;
 }
@@ -84,7 +84,7 @@
 
 .phases-span{
   background-color: #FFFFFF;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 5px;
 }
 
@@ -120,7 +120,7 @@ input {
 }
 
 input#fname {
-  width: 500px;
+  width: 400px;
   height: 15px;
   margin: 5px;
 }
