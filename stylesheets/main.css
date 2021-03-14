@@ -233,6 +233,29 @@ td {
   font-weight: bold;
 }
 
+#th-phase {
+  width: 8%;
+}
+
+#th-ing-name {
+  width: 55%;
+}
+
+#th-percentage {
+  width: 7%;
+}
+
+#batch-column {
+  width: 8%;
+}
+
+#mass-column {
+  width: 11%;
+}
+
+#th-ing-cost {
+  width: 11%;
+}
 
 
 
