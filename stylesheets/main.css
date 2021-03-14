@@ -1,7 +1,8 @@
 .main-grid{
   display: block;
   border-color: #545454;
-  margin: 25px;
+  margin-left: 13px;
+  margin-right: 5px;
   padding: 5px;
   background-color: #fdeee7;
   border-radius: 20px;
