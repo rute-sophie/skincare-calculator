@@ -1,0 +1,267 @@
+.main-grid{
+  display: block;
+  border-color: #545454;
+  margin: 25px;
+  padding: 5px;
+  background-color: #fdeee7;
+  border-radius: 20px;
+  width: 96%;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ingredients-grid{
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #eae4e1;
+  border-radius: 5px;
+}
+
+.water-phase {
+  background-image: url("https://makingskincare.com/wp-content/uploads/2020/04/cropped-110-x-100.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #bfc1d1;
+  background-blend-mode: lighten;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  width: 10%;
+}
+
+.oil-phase {
+  background-image: url("https://makingskincare.com/wp-content/uploads/2020/04/cropped-110-x-100.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ced4c5;
+  background-blend-mode: lighten;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cooldown-phase {
+  background-image: url("https://makingskincare.com/wp-content/uploads/2020/04/cropped-110-x-100.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #d39595;
+  background-blend-mode: lighten;
+  font-weight: bold;
+  text-align: center;
+}
+
+.user-filled-cells  {
+  background-color: white;
+  border-radius: none;
+}
+
+.ingredient-text-editable {
+  width: 430px;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.water-rows {
+  background-color: #bfc1d1;
+}
+
+.oil-rows {
+  background-color: #ced4c5;
+}
+
+.cooldown-rows {
+  background-color: #d39595;
+}
+
+.footer{
+  text-align: right;
+}
+
+.phases-span {
+  background-color: #FFFFFF;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.entry td {
+  font-size: 12px;
+}
+
+.calculator-buttons {
+  margin-left: 550px;
+}
+
+h2 {
+  color: #545454;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 2px;
+}
+
+.form-control {
+  font-size: 10px;
+}
+
+form label{
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+form select {
+  height: 30px;
+  padding: 6px 12px;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  background-color: #fff;
+  color: #000;
+  border-style: none;
+  height: 15px;
+  width: 25px;
+}
+
+input [type="text"] {
+  font-size: 12px;
+}
+
+input#fname {
+  width: 500px;
+  height: 30px;
+}
+
+input#calculator-date {
+  width: 250px;
+  height: 30px;
+}
+
+input#batch-size{
+  width: 85px;
+  height: 30px;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 10px;
+}
+
+input[type=button] {
+    width: 70px;
+    height: 20px;
+    background-color: #5f6c7a;
+    border-radius: 4px;
+  	margin-top: 20px;
+  	margin-left:25px;
+  	margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type=button]:focus {
+  background-color: ##d6dbe0;
+  border: solid 2px black;
+}
+
+input:disabled{
+  background-color: #cbd1da;
+  color: #cccccc;
+}
+
+select {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+#img-calculator-logo{
+  float: right;
+  padding-right: 50px;
+}
+
+table
+{
+    table-layout:fixed;
+    width:100%;
+}
+
+th {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #9099a4;
+  border-radius: 3px;
+}
+
+tr {
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+    background: rgba(112, 112, 112, 0.1);
+}
+
+td {
+  border-radius: 1px;
+  font-size: 10px;
+  padding: 5px;
+}
+
+#myform {
+  margin-left: 25px;
+  margin-top: 10px;
+  width: auto;
+}
+
+#emulsifier-blend {
+  border-style: none;
+  height: 25px;
+  width: 430px;
+}
+
+#total-row {
+  font-weight: bold;
+  background-color: #9099a4;
+  text-align: center;
+  font-size: 14px;
+}
+
+#total_percentage, #total_batch, #total_ingredient_cost, #total_formula_cost {
+  font-weight: bold;
+}
+
+#th-phase {
+  width: 8%;
+  min-width:550px;
+}
+
+#th-ing-name {
+  width: 55%;
+   min-width:550px;
+}
+
+#th-percentage {
+  width: 7%;
+  min-width:550px;
+}
+
+#batch-column {
+  width: 8%;
+  min-width:550px;
+}
+
+#mass-column {
+  width: 11%;
+  min-width:550px;
+}
+
+#th-ing-cost {
+  width: 11%;
+  min-width:550px;
+}
+
+
+
+input[placeholder] { text-overflow: ellipsis; }
+::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
+input:-moz-placeholder { text-overflow: ellipsis; }
