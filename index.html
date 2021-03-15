@@ -212,7 +212,7 @@
     </div>
 
     <div class="calculator-buttons">
-      <input type="button" value="Reset" name="reset" onclick="parent.location.reload();">
+      <input type="button" value="Reset" name="reset" onclick="window.parent.location = document.referrer;">
       <input id="calculate-button" type="button" value="Calculate" name="calculate">
       <input type="button" value="Print" name"print" onclick="window.print()">
     </div>
