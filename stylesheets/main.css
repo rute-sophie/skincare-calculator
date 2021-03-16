@@ -21,6 +21,7 @@
 
 .water-phase {
   background-image: url("https://makingskincare.com/wp-content/uploads/2020/04/cropped-110-x-100.png");
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #bfc1d1;
@@ -44,6 +45,7 @@
 
 .cooldown-phase {
   background-image: url("https://makingskincare.com/wp-content/uploads/2020/04/cropped-110-x-100.png");
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #d39595;
