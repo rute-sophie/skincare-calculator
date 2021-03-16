@@ -24,13 +24,13 @@
     <form id="myform" Name="calc">
       <label for="fname">Name of formulation:</label> <input type="text" id="fname" name="fname"><br/>
       <label for="calculator-date">Date:</label> <input type="date" id="calculator-date" name="calculator-date"><br/>
-      <label for="product-skin-type">Product & skin type:</label> <select id="product-skin-type" name="product-skin-type">
+      <label for="product-skin-type">Product & skin type*:</label> <select id="product-skin-type" name="product-skin-type">
         <option value="" selected disabled hidden>Select option:</option>
         <option value="oily-skin-cream">Oily skin cream</option>
         <option value="normal-skin-cream">Normal skin cream / body lotion</option>
         <option value="dry-skin-cream">Dry skin cream / body butter</option>
       </select></br>
-      <label for="grams-batch-radio">Batch size:</label>
+      <label for="grams-batch-radio">Batch size*:</label>
       <input type="text" id="batch-size" name="batch-size">
       <input type="radio" id="grams-batch" name="batch-radio" checked="checked" onclick="gramsOrOuncesCheck();"> Grams
       <input type="radio" id="ounces-batch" name="batch-radio" onclick="gramsOrOuncesCheck();"> Ounces
@@ -60,21 +60,21 @@
           <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
           <tr>
             <td rowspan="6" class="water-phase"><span class="phases-span">WATER</span></td>
-            <td class="water-rows left">Water (% is calculated automatically to make your formula add up to 100%)</td>
+            <td class="water-rows left">Water (% is calculated automatically to make your formula add up to 100%)*</td>
             <td class="water-rows right"><output id="ingredient_percentage_1" type="text" name=" " form="my_form"></td>
             <td class="water-rows right"><output id="grams_ounces_1" type="text" name=" " form="my_form"></td>
             <td class="water-rows right"><input id="ingredient_cost_1" type="text" name=" " form="my_form" /></td>
             <td class="water-rows right"><output id="cost_formula_1" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="water-rows left">Glycerin (1% for oily skin, 3% normal skin, 5% very dry skin)</td>
+            <td class="water-rows left">Glycerin (1% for oily skin, 3% normal skin, 5% very dry skin)*</td>
             <td class="water-rows right"><input id="ingredient_percentage_2" type="text" name=" " form="my_form" />%</td>
             <td class="water-rows right"><output id="grams_ounces_2" type="text" name=" " form="my_form"></td>
             <td class="water-rows right"><input id="ingredient_cost_2" type="text" name=" " form="my_form" /></td>
             <td class="water-rows right"><output id="cost_formula_2" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="water-rows left">Chelator (0.05-0.2%) of either: disodium EDTA or the less effective: sodium phytate</td>
+            <td class="water-rows left">Chelator (0.05-0.2%) of either: disodium EDTA or the less effective: sodium phytate*</td>
             <td class="water-rows right"><input  id="ingredient_percentage_3" type="text" name=" " form="my_form" />%</td>
             <td class="water-rows right"><output id="grams_ounces_3" type="text" name=" " form="my_form"></td>
             <td class="water-rows right"><input id="ingredient_cost_3" type="text" name=" " form="my_form" /></td>
@@ -105,14 +105,14 @@
                     <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
           <tr class="phase-row">
             <td rowspan="7" class="oil-phase"><span class="phases-span">OIL</span></td>
-            <td class="oil-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Insert name of oil/ester (% is automatically calculated)" value=""></td>
+            <td class="oil-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Insert name of oil/ester (% is automatically calculated)*" value=""></td>
             <td class="oil-rows right"><output id="ingredient_percentage_7" type="text" name=" " form="my_form"></td>
             <td class="oil-rows right"><output id="grams_ounces_7" type="text" name=" " form="my_form"></td>
             <td class="oil-rows right"><input id="ingredient_cost_7" type="text" name=" " form="my_form" /></td>
             <td class="oil-rows right"><output id="cost_formula_7" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="oil-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Insert name of oil/ester (% is automatically calculated)" value=""></td>
+            <td class="oil-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Insert name of oil/ester (% is automatically calculated)*" value=""></td>
             <td class="oil-rows right"><output id="ingredient_percentage_8" type="text" name=" " form="my_form"></td>
             <td class="oil-rows right"><output id="grams_ounces_8" type="text" name=" " form="my_form"></td>
             <td class="oil-rows right"><input id="ingredient_cost_8" type="text" name=" " form="my_form" /></td>
@@ -133,7 +133,7 @@
             <td class="oil-rows right"><output id="cost_formula_10" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="oil-rows left">1-4% Cetearyl Alcohol (1% for thin light, 2-3% for medium viscosity, 4% for v. thick, heavy, emollient cream)</td>
+            <td class="oil-rows left">1-4% Cetearyl Alcohol (1% for thin light, 2-3% for medium viscosity, 4% for v. thick, heavy, emollient cream)*</td>
             <td class="oil-rows right"><input id="ingredient_percentage_11" type="text" name=" " form="my_form" />%</td>
             <td class="oil-rows right"><output id="grams_ounces_11" type="text" name=" " form="my_form"></td>
             <td class="oil-rows right"><input id="ingredient_cost_11" type="text" name=" " form="my_form" /></td>
@@ -141,7 +141,7 @@
           </tr>
           <tr>
             <td class="oil-rows left"><select id="emulsifier-blend" name="emulsifier-blend">
-                <option value="" selected disabled hidden>Select Emulsifier blend:</option>
+                <option value="" selected disabled hidden>Select Emulsifier blend*:</option>
                 <option value="olivem">Olivem 1000</option>
                 <option value="pbs">PBS 6 from saveoncritic or aliacura.de</option>
                 <option value="lotionpro">Lotionpro 165 from lotioncrafter</option>
