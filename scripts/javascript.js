@@ -43,7 +43,7 @@ function verifyPercentages(){
   else {
     for (i=1; i<19; i++){
       var percentage = document.getElementById('ingredient_percentage_'+i);
-      if( (((i>1) && (i<5)) || (i==11) || (i==13)) && (percentage.value == "")) {
+      if( (((i>1) && (i<4)) || (i==11) || (i==13)) && (percentage.value == "")) {
         alert ("Mandatory fields are not filled up");
         return false;
       }

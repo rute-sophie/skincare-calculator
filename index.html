@@ -47,7 +47,7 @@
     </form>
 
     <div class="ingredients-grid">
-      <table>
+      <table id"calculator-table">
         <tbody>
           <tr>
             <th id="th-phase">Phase</th>
@@ -60,87 +60,87 @@
           <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
           <tr>
             <td rowspan="6" class="water-phase"><span class="phases-span">WATER</span></td>
-            <td class="water-rows">Water (% is calculated automatically to make your formula add up to 100%)</td>
-            <td class="water-rows"><output id="ingredient_percentage_1" type="text" name=" " form="my_form"></td>
-            <td class="water-rows"><output id="grams_ounces_1" type="text" name=" " form="my_form"></td>
-            <td class="water-rows"><input id="ingredient_cost_1" type="text" name=" " form="my_form" /></td>
-            <td class="water-rows"><output id="cost_formula_1" type="text" name=" " form="my_form"></td>
+            <td class="water-rows left">Water (% is calculated automatically to make your formula add up to 100%)</td>
+            <td class="water-rows right"><output id="ingredient_percentage_1" type="text" name=" " form="my_form"></td>
+            <td class="water-rows right"><output id="grams_ounces_1" type="text" name=" " form="my_form"></td>
+            <td class="water-rows right"><input id="ingredient_cost_1" type="text" name=" " form="my_form" /></td>
+            <td class="water-rows right"><output id="cost_formula_1" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="water-rows">Glycerin (1% for oily skin, 3% normal skin, 5% very dry skin)</td>
-            <td class="water-rows"><input id="ingredient_percentage_2" type="text" name=" " form="my_form" />%</td>
-            <td class="water-rows"><output id="grams_ounces_2" type="text" name=" " form="my_form"></td>
-            <td class="water-rows"><input id="ingredient_cost_2" type="text" name=" " form="my_form" /></td>
-            <td class="water-rows"><output id="cost_formula_2" type="text" name=" " form="my_form"></td>
+            <td class="water-rows left">Glycerin (1% for oily skin, 3% normal skin, 5% very dry skin)</td>
+            <td class="water-rows right"><input id="ingredient_percentage_2" type="text" name=" " form="my_form" />%</td>
+            <td class="water-rows right"><output id="grams_ounces_2" type="text" name=" " form="my_form"></td>
+            <td class="water-rows right"><input id="ingredient_cost_2" type="text" name=" " form="my_form" /></td>
+            <td class="water-rows right"><output id="cost_formula_2" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="water-rows">Chelator (0.05-0.2%) of either: disodium EDTA or the less effective: sodium phytate</td>
-            <td class="water-rows"><input  id="ingredient_percentage_3" type="text" name=" " form="my_form" />%</td>
-            <td class="water-rows"><output id="grams_ounces_3" type="text" name=" " form="my_form"></td>
-            <td class="water-rows"><input id="ingredient_cost_3" type="text" name=" " form="my_form" /></td>
-            <td class="water-rows"><output id="cost_formula_3" type="text" name=" " form="my_form"></td>
+            <td class="water-rows left">Chelator (0.05-0.2%) of either: disodium EDTA or the less effective: sodium phytate</td>
+            <td class="water-rows right"><input  id="ingredient_percentage_3" type="text" name=" " form="my_form" />%</td>
+            <td class="water-rows right"><output id="grams_ounces_3" type="text" name=" " form="my_form"></td>
+            <td class="water-rows right"><input id="ingredient_cost_3" type="text" name=" " form="my_form" /></td>
+            <td class="water-rows right"><output id="cost_formula_3" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="water-rows">0.5% Euxyl K900 plus 0.5% Euxyl PE9010 (add both - Lotioncrafter sells). Or if in EU, use on it's own: 1% Euxyl K940 from plena-natura.pt</td>
-            <td class="water-rows"><output  id="ingredient_percentage_4" type="text" name=" " form="my_form"/>1%</td>
-            <td class="water-rows"><output id="grams_ounces_4" type="text" name=" " form="my_form"></td>
-            <td class="water-rows"><input id="ingredient_cost_4" type="text" name=" " form="my_form" /></td>
-            <td class="water-rows"><output id="cost_formula_4" type="text" name=" " form="my_form"></td>
+            <td class="water-rows left">0.5% Euxyl K900 plus 0.5% Euxyl PE9010 (add both - Lotioncrafter sells). Or if in EU, use on it's own: 1% Euxyl K940 from plena-natura.pt</td>
+            <td class="water-rows right"><output  id="ingredient_percentage_4" type="text" name=" " form="my_form"/>1%</td>
+            <td class="water-rows right"><output id="grams_ounces_4" type="text" name=" " form="my_form"></td>
+            <td class="water-rows right"><input id="ingredient_cost_4" type="text" name=" " form="my_form" /></td>
+            <td class="water-rows right"><output id="cost_formula_4" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="water-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Water soluble ingredient, if any (not heat sensitive)" value=""></td>
-            <td class="water-rows"><input id="ingredient_percentage_5" type="text" name=" " form="my_form" />%</td>
-            <td class="water-rows"><output id="grams_ounces_5" type="text" name=" " form="my_form"></td>
-            <td class="water-rows"><input id="ingredient_cost_5" type="text" name=" " form="my_form" /></td>
-            <td class="water-rows"><output id="cost_formula_5" type="text" name=" " form="my_form"></td>
+            <td class="water-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Water soluble ingredient, if any (not heat sensitive)" value=""></td>
+            <td class="water-rows right"><input id="ingredient_percentage_5" type="text" name=" " form="my_form" />%</td>
+            <td class="water-rows right"><output id="grams_ounces_5" type="text" name=" " form="my_form"></td>
+            <td class="water-rows right"><input id="ingredient_cost_5" type="text" name=" " form="my_form" /></td>
+            <td class="water-rows right"><output id="cost_formula_5" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="water-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Water soluble ingredient, if any (not heat sensitive)" value=""></td>
-            <td class="water-rows"><input  id="ingredient_percentage_6" type="text" name=" " form="my_form" />%</td>
-            <td class="water-rows"><output id="grams_ounces_6" type="text" name=" " form="my_form"></td>
-            <td class="water-rows"><input id="ingredient_cost_6" type="text" name=" " form="my_form" /></td>
-            <td class="water-rows"><output id="cost_formula_6" type="text" name=" " form="my_form"></td>
+            <td class="water-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Water soluble ingredient, if any (not heat sensitive)" value=""></td>
+            <td class="water-rows right"><input  id="ingredient_percentage_6" type="text" name=" " form="my_form" />%</td>
+            <td class="water-rows right"><output id="grams_ounces_6" type="text" name=" " form="my_form"></td>
+            <td class="water-rows right"><input id="ingredient_cost_6" type="text" name=" " form="my_form" /></td>
+            <td class="water-rows right"><output id="cost_formula_6" type="text" name=" " form="my_form"></td>
           </tr>
                     <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
                     <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
           <tr class="phase-row">
             <td rowspan="7" class="oil-phase"><span class="phases-span">OIL</span></td>
-            <td class="oil-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Insert name of oil/ester (% is automatically calculated)" value=""></td>
-            <td class="oil-rows"><output id="ingredient_percentage_7" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><output id="grams_ounces_7" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><input id="ingredient_cost_7" type="text" name=" " form="my_form" /></td>
-            <td class="oil-rows"><output id="cost_formula_7" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Insert name of oil/ester (% is automatically calculated)" value=""></td>
+            <td class="oil-rows right"><output id="ingredient_percentage_7" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><output id="grams_ounces_7" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><input id="ingredient_cost_7" type="text" name=" " form="my_form" /></td>
+            <td class="oil-rows right"><output id="cost_formula_7" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="oil-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Insert name of oil/ester (% is automatically calculated)" value=""></td>
-            <td class="oil-rows"><output id="ingredient_percentage_8" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><output id="grams_ounces_8" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><input id="ingredient_cost_8" type="text" name=" " form="my_form" /></td>
-            <td class="oil-rows"><output id="cost_formula_8" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Insert name of oil/ester (% is automatically calculated)" value=""></td>
+            <td class="oil-rows right"><output id="ingredient_percentage_8" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><output id="grams_ounces_8" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><input id="ingredient_cost_8" type="text" name=" " form="my_form" /></td>
+            <td class="oil-rows right"><output id="cost_formula_8" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="oil-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Less than 1% of an oil soluble active (not heat sensitive), if any" value=""></td>
-            <td class="oil-rows"><input id="ingredient_percentage_9" type="text" name=" " form="my_form" />%</td>
-            <td class="oil-rows"><output id="grams_ounces_9" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><input id="ingredient_cost_9" type="text" name=" " form="my_form" /></td>
-            <td class="oil-rows"><output id="cost_formula_9" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Less than 1% of an oil soluble active (not heat sensitive), if any" value=""></td>
+            <td class="oil-rows right"><input id="ingredient_percentage_9" type="text" name=" " form="my_form" />%</td>
+            <td class="oil-rows right"><output id="grams_ounces_9" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><input id="ingredient_cost_9" type="text" name=" " form="my_form" /></td>
+            <td class="oil-rows right"><output id="cost_formula_9" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="oil-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Less than 1% of an oil soluble active (not heat sensitive), if any" value=""></td>
-            <td class="oil-rows"><input id="ingredient_percentage_10" type="text" name=" " form="my_form" />%</td>
-            <td class="oil-rows"><output id="grams_ounces_10" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><input id="ingredient_cost_10" type="text" name=" " form="my_form" /></td>
-            <td class="oil-rows"><output id="cost_formula_10" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Less than 1% of an oil soluble active (not heat sensitive), if any" value=""></td>
+            <td class="oil-rows right"><input id="ingredient_percentage_10" type="text" name=" " form="my_form" />%</td>
+            <td class="oil-rows right"><output id="grams_ounces_10" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><input id="ingredient_cost_10" type="text" name=" " form="my_form" /></td>
+            <td class="oil-rows right"><output id="cost_formula_10" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="oil-rows">1-4% Cetearyl Alcohol (1% for thin light, 2-3% for medium viscosity, 4% for v. thick, heavy, emollient cream)</td>
-            <td class="oil-rows"><input id="ingredient_percentage_11" type="text" name=" " form="my_form" />%</td>
-            <td class="oil-rows"><output id="grams_ounces_11" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><input id="ingredient_cost_11" type="text" name=" " form="my_form" /></td>
-            <td class="oil-rows"><output id="cost_formula_11" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows left">1-4% Cetearyl Alcohol (1% for thin light, 2-3% for medium viscosity, 4% for v. thick, heavy, emollient cream)</td>
+            <td class="oil-rows right"><input id="ingredient_percentage_11" type="text" name=" " form="my_form" />%</td>
+            <td class="oil-rows right"><output id="grams_ounces_11" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><input id="ingredient_cost_11" type="text" name=" " form="my_form" /></td>
+            <td class="oil-rows right"><output id="cost_formula_11" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="oil-rows"><select id="emulsifier-blend" name="emulsifier-blend">
+            <td class="oil-rows left"><select id="emulsifier-blend" name="emulsifier-blend">
                 <option value="" selected disabled hidden>Select Emulsifier blend:</option>
                 <option value="olivem">Olivem 1000</option>
                 <option value="pbs">PBS 6 from saveoncritic or aliacura.de</option>
@@ -148,64 +148,64 @@
                 <option value="emulgator">Emulgator rich from aliacura.de</option>
                 <option value="lamecreme">Lamecreme HT from dragonspice.de</option>
               </select></td>
-            <td class="oil-rows"><output id="ingredient_percentage_12" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><output id="grams_ounces_12" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><input id="ingredient_cost_12" type="text" name=" " form="my_form" /></td>
-            <td class="oil-rows"><output id="cost_formula_12" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows  right"><output id="ingredient_percentage_12" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><output id="grams_ounces_12" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><input id="ingredient_cost_12" type="text" name=" " form="my_form" /></td>
+            <td class="oil-rows right"><output id="cost_formula_12" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="oil-rows">Xanthan Gum</td>
-            <td class="oil-rows"><input id="ingredient_percentage_13" type="text" name=" " form="my_form" />%</td>
-            <td class="oil-rows"><output id="grams_ounces_13" type="text" name=" " form="my_form"></td>
-            <td class="oil-rows"><input id="ingredient_cost_13" type="text" name=" " form="my_form" /></td>
-            <td class="oil-rows"><output id="cost_formula_13" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows left">Xanthan Gum</td>
+            <td class="oil-rows right"><input id="ingredient_percentage_13" type="text" name=" " form="my_form" />%</td>
+            <td class="oil-rows right"><output id="grams_ounces_13" type="text" name=" " form="my_form"></td>
+            <td class="oil-rows right"><input id="ingredient_cost_13" type="text" name=" " form="my_form" /></td>
+            <td class="oil-rows right"><output id="cost_formula_13" type="text" name=" " form="my_form"></td>
           </tr>
                     <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
                     <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
           <tr>
             <td rowspan="5" class="cooldown-phase"><span class="phases-span">COOL DOWN</span></td>
-            <td class="cooldown-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Fragrance/essential oil, if any (check the % is IFRA compliant)" value=""></td>
-            <td class="cooldown-rows"><input id="ingredient_percentage_14" type="text" name=" " form="my_form" />%</td>
-            <td class="cooldown-rows"><output id="grams_ounces_14" type="text" name=" " form="my_form"></td>
-            <td class="cooldown-rows"><input id="ingredient_cost_14" type="text" name=" " form="my_form" /></td>
-            <td class="cooldown-rows"><output id="cost_formula_14" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Fragrance/essential oil, if any (check the % is IFRA compliant)" value=""></td>
+            <td class="cooldown-rows right"><input id="ingredient_percentage_14" type="text" name=" " form="my_form" />%</td>
+            <td class="cooldown-rows right"><output id="grams_ounces_14" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows right"><input id="ingredient_cost_14" type="text" name=" " form="my_form" /></td>
+            <td class="cooldown-rows right"><output id="cost_formula_14" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="cooldown-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Less than 1% of an oil soluble heat sensitive ingredient, if any" value=""></td>
-            <td class="cooldown-rows"><input id="ingredient_percentage_15" type="text" name=" " form="my_form" />%</td>
-            <td class="cooldown-rows"><output id="grams_ounces_15" type="text" name=" " form="my_form"></td>
-            <td class="cooldown-rows"><input id="ingredient_cost_15" type="text" name=" " form="my_form" /></td>
-            <td class="cooldown-rows"><output id="cost_formula_15" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Less than 1% of an oil soluble heat sensitive ingredient, if any" value=""></td>
+            <td class="cooldown-rows right"><input id="ingredient_percentage_15" type="text" name=" " form="my_form" />%</td>
+            <td class="cooldown-rows right"><output id="grams_ounces_15" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows right"><input id="ingredient_cost_15" type="text" name=" " form="my_form" /></td>
+            <td class="cooldown-rows right"><output id="cost_formula_15" type="text" name=" " form="my_form"></td>
           </tr>
-            <td class="cooldown-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Less than 1% of an oil soluble heat sensitive ingredient, if any" value=""></td>
-            <td class="cooldown-rows"><input id="ingredient_percentage_16" type="text" name=" " form="my_form" />%</td>
-            <td class="cooldown-rows"><output id="grams_ounces_16" type="text" name=" " form="my_form"></td>
-            <td class="cooldown-rows"><input id="ingredient_cost_16" type="text" name=" " form="my_form" /></td>
-            <td class="cooldown-rows"><output id="cost_formula_16" type="text" name=" " form="my_form"></td>
-          </tr>
-          <tr>
-            <td class="cooldown-rows"><input class="ingredient-text-editable" type="text" name=" " placeholder="Water soluble heat sensitive ingredient, if any" value=""></td>
-            <td class="cooldown-rows"><input id="ingredient_percentage_17" type="text" name=" " form="my_form" />%</td>
-            <td class="cooldown-rows"><output id="grams_ounces_17" type="text" name=" " form="my_form"></td>
-            <td class="cooldown-rows"><input id="ingredient_cost_17" type="text" name=" " form="my_form" /></td>
-            <td class="cooldown-rows"><output id="cost_formula_17" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Less than 1% of an oil soluble heat sensitive ingredient, if any" value=""></td>
+            <td class="cooldown-rows right"><input id="ingredient_percentage_16" type="text" name=" " form="my_form" />%</td>
+            <td class="cooldown-rows right"><output id="grams_ounces_16" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows right"><input id="ingredient_cost_16" type="text" name=" " form="my_form" /></td>
+            <td class="cooldown-rows right"><output id="cost_formula_16" type="text" name=" " form="my_form"></td>
           </tr>
           <tr>
-            <td class="cooldown-rows"><input class="ingredient-text-editable" type="text" name="" placeholder="Water soluble heat sensitive ingredient, if any" value=""></td>
-            <td class="cooldown-rows"><input id="ingredient_percentage_18" type="text" name=" " form="my_form" />%</td>
-            <td class="cooldown-rows"><output id="grams_ounces_18" type="text" name=" " form="my_form"></td>
-            <td class="cooldown-rows"><input id="ingredient_cost_18" type="text" name=" " form="my_form" /></td>
-            <td class="cooldown-rows"><output id="cost_formula_18" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows left"><input class="ingredient-text-editable" type="text" name=" " placeholder="Water soluble heat sensitive ingredient, if any" value=""></td>
+            <td class="cooldown-rows right"><input id="ingredient_percentage_17" type="text" name=" " form="my_form" />%</td>
+            <td class="cooldown-rows right"><output id="grams_ounces_17" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows right"><input id="ingredient_cost_17" type="text" name=" " form="my_form" /></td>
+            <td class="cooldown-rows right"><output id="cost_formula_17" type="text" name=" " form="my_form"></td>
+          </tr>
+          <tr>
+            <td class="cooldown-rows left"><input class="ingredient-text-editable" type="text" name="" placeholder="Water soluble heat sensitive ingredient, if any" value=""></td>
+            <td class="cooldown-rows right"><input id="ingredient_percentage_18" type="text" name=" " form="my_form" />%</td>
+            <td class="cooldown-rows right"><output id="grams_ounces_18" type="text" name=" " form="my_form"></td>
+            <td class="cooldown-rows right"><input id="ingredient_cost_18" type="text" name=" " form="my_form" /></td>
+            <td class="cooldown-rows right"><output id="cost_formula_18" type="text" name=" " form="my_form"></td>
           </tr>
           <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
           <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
             <tr>
             <td id="total-row">Total</td>
             <td></td>
-            <td><output id="total_percentage" type="text" name=" " form="my_form"></td>
-            <td><output id="total_batch" type="text" name=" " form="my_form"></td>
-            <td><output id="total_ingredient_cost" type="text" name=" " form="my_form"></td>
-            <td><output id="total_formula_cost" type="text" name=" " form="my_form"></td>
+            <td class="right"><output id="total_percentage" type="text" name=" " form="my_form"></td>
+            <td class="right"><output id="total_batch" type="text" name=" " form="my_form"></td>
+            <td class="right"><output id="total_ingredient_cost" type="text" name=" " form="my_form"></td>
+            <td class="right"><output id="total_formula_cost" type="text" name=" " form="my_form"></td>
           </tr>
         </tbody>
       </table>

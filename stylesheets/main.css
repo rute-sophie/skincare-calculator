@@ -194,18 +194,22 @@ th {
   border-radius: 3px;
 }
 
-tr {
-  text-align: left;
-}
-
-tr:nth-child(odd) {
-    background: rgba(112, 112, 112, 0.1);
-}
-
 td {
   border-radius: 1px;
   font-size: 10px;
   padding: 5px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+   text-align: center;
+ }
+
+tr:nth-child(odd) {
+    background: rgba(112, 112, 112, 0.1);
 }
 
 #myform {
