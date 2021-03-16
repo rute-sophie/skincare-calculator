@@ -134,7 +134,7 @@ input#calculator-date {
 }
 
 input#batch-size{
-  margin-left: 59px;
+  margin-left: 56px;
   width: 35px;
 }
 
@@ -221,7 +221,7 @@ tr:nth-child(odd) {
 #product-skin-type {
   width: 190px;
   height: 15px;
-  margin-left: 12px;
+  margin-left: 9px;
   border-style: none;
 }
 
