@@ -1,10 +1,11 @@
+/* Global Variables */
 var batch = document.getElementById('batch-size');
 var batch_column = document.getElementById('batch-column');
 var batch_value = batch.value;
 var mass_column = document.getElementById('mass-column');
-
 var selectElement = document.querySelector('#product-skin-type');
 
+/* Event Listener for main dropbox */
 selectElement.addEventListener('change', (event) => {
   var oil_ester_1 = document.querySelector('#oil-ester-1');
   var oil_ester_2 = document.querySelector('#oil-ester-2');
@@ -25,9 +26,11 @@ selectElement.addEventListener('change', (event) => {
   }
 });
 
+/* Event Listener for Calculate button */
 var calculate_button = document.getElementById('calculate-button');
 calculate_button.onclick = verifyPercentages;
 
+/* 1st step - verify percentages */
 function verifyPercentages(){
 
   var total = 0;
@@ -200,84 +203,4 @@ function currencyCheck() {
   else {
     mass_column.innerHTML = 'Ingredient cost per pound';
   } */
-}
-
-function validatePercentage(form) {
-
-  document.calculatorForm.action = '/Calculators/Batch_Size_Calculator.aspx'
-  document.calculatorForm.target = '';
-  var i = 0;
-  var percent = 0;
-  var totalPercent = 0;
-  var result = true;
-  with (form) {
-    for (i = 1; i <= 20; i++) {
-      var percentString = eval('percent_' + i).value;
-      if (percentString != "") {
-        if (parseFloat(percentString)) {
-          if (parseFloat(percentString) > 0) {
-            percent = parseFloat(percent) + parseFloat(percentString);
-          } else {
-            alert("Amount values cannot be a negative number.");
-            return false;
-          }
-        } else {
-          alert("Amount values need to be a number between 1 and 100%.");
-          return false;
-        }
-      }
-    }
-  }
-  percent = Math.round(percent * 100) / 100;
-  if (percent > 100) {
-    result = false;
-    alert("The total percent of additives cannot be more than 100%. Please correct this.");
-  } else {
-    if (percent != 100) {
-      alert("The total amount of ingredients needs to add up to 100%");
-      result = false;
-    }
-  }
-  return result;
-}
-
-function printView() {
-  var cID1 = '/Calculators/Batch_Size_Calculator_Print.aspx';
-  var newWin = window.open(cID1, "OpenNewPage", "width=750,height=700,location=0,menubar=0,resizable=1,scrollbars=1,status=1,titlebar=1,toolbar=0,screenX=50,left=50,screenY=30,top=50");
-
-  if (validatePercentage(document.calculatorForm)) {
-    document.calculatorForm.action = cID1;
-    document.calculatorForm.target = 'OpenNewPage';
-    document.calculatorForm.submit();
-  }
-  return true;
-}
-
-function resetForm(form) {
-
-  if (confirm("Are you sure you want to start over?")) {
-    document.calculatorForm.action = '/Calculators/Batch_Size_Calculator.aspx';
-    document.calculatorForm.startOver.value = "true";
-    document.calculatorForm.target = '';
-    document.calculatorForm.submit();
-  }
-  return true;
-}
-
-function OpenNewPage(cID1) {
-  var cID1;
-  var newWin = window.open(cID1, "OpenNewPage", "width=600,height=220,location=0,menubar=0,resizable=1,scrollbars=1,status=1,titlebar=1,toolbar=0,screenX=50,left=50,screenY=30,top=50");
-  newWin.focus();
-}
-
-function displayTotal() {
-  var i = 0;
-  var total = 0;
-  for (i = 1; i < 20; i++) {
-    var tem = eval('document.calculatorForm.percent_' + i);
-    if (parseFloat(tem.value)) {
-      total = parseFloat(total) + parseFloat(tem.value);
-    }
-  }
-  document.calculatorForm.totalBatchVolume.value = total;
 }
