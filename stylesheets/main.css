@@ -107,6 +107,10 @@ td {
   padding: 5px;
 }
 
+tr:nth-child(odd) {
+  background: rgba(112, 112, 112, 0.1);
+}
+
 .main-grid{
   display: block;
   border-color: #545454;
@@ -206,10 +210,6 @@ td {
 
 .right {
   text-align: center;
-}
-
-tr:nth-child(odd) {
-  background: rgba(112, 112, 112, 0.1);
 }
 
 #myform {
