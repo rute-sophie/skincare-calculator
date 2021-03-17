@@ -274,6 +274,7 @@ tr:nth-child(odd) {
   position: fixed;
   width: 250px;
   left: 50%;
+  top: 40%;
   margin-left: -100px;
   padding: 6px 8px 8px;
   box-sizing: border-box;
