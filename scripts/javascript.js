@@ -48,6 +48,8 @@ function verifyPercentages(){
   var chelator = document.getElementById('ingredient_percentage_3').value;
   var water_sol1 = document.getElementById('ingredient_percentage_5').value;
   var water_sol2 = document.getElementById('ingredient_percentage_6').value;
+  var water_sol3 = document.getElementById('ingredient_percentage_17').value;
+  var water_sol4 = document.getElementById('ingredient_percentage_18').value;
   var oil1 = document.getElementById('ingredient_percentage_7').value;
   var oil2 = document.getElementById('ingredient_percentage_8').value;
   var opt_oil1 = document.getElementById('ingredient_percentage_9').value;
@@ -98,7 +100,7 @@ function verifyPercentages(){
     functionAlert("Please make sure that the percentages for oil soluble heat sensitive in the Cool Down Phase are less than 1%.");
     return false;
   }
-  else if ((water_sol1 > 99) || (water_sol2 > 99) ) {
+  else if ((water_sol1 > 90) || (water_sol2 > 90) || (water_sol3 > 90) || (water_sol4 > 90) ) {
     functionAlert("You added a value too high for ingredients.");
     return false;
   }
