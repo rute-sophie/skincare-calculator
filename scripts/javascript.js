@@ -32,63 +32,81 @@ calculate_button.onclick = verifyPercentages;
 
 /* Alert box */
 function functionAlert(msg, myYes) {
-          var confirmBox = $("#confirm");
-          confirmBox.find(".message").text(msg);
-          confirmBox.find(".yes").unbind().click(function() {
-             confirmBox.hide();
-          });
-          confirmBox.find(".yes").click(myYes);
-          confirmBox.show();
-       }
+  var confirmBox = $("#confirm");
+  confirmBox.find(".message").text(msg);
+  confirmBox.find(".yes").unbind().click(function() {
+    confirmBox.hide();
+  });
+  confirmBox.find(".yes").click(myYes);
+  confirmBox.show();
+}
 
 /* 1st step - verify percentages */
 function verifyPercentages(){
-
-  var total = 0;
-  var i;
+  debugger;
+  var glycerin = document.getElementById('ingredient_percentage_2').value;
+  var chelator = document.getElementById('ingredient_percentage_3').value;
+  var water_sol1 = document.getElementById('ingredient_percentage_5').value;
+  var water_sol2 = document.getElementById('ingredient_percentage_6').value;
+  var oil1 = document.getElementById('ingredient_percentage_7').value;
+  var oil2 = document.getElementById('ingredient_percentage_8').value;
+  var opt_oil1 = document.getElementById('ingredient_percentage_9').value;
+  var opt_oil2 = document.getElementById('ingredient_percentage_10').value;
+  var cetearyl = document.getElementById('ingredient_percentage_11').value;
+  var emulsifier = document.querySelector('#emulsifier-blend').value;
+  var fragance = document.getElementById('ingredient_percentage_14').value;
+  var cooldown_optoil1 = document.getElementById('ingredient_percentage_15').value;
+  var cooldown_optoil2 = document.getElementById('ingredient_percentage_16').value;
 
   if (batch.value === "") {
     functionAlert("Please insert value in Batch Size field.");
     return false;
   }
 
-    var glycerin = document.getElementById('ingredient_percentage_'+2);
-    var chelator = document.getElementById('ingredient_percentage_'+3);
-    var cetearyl = document.getElementById('ingredient_percentage_'+11);
-
-    if((glycerin.value == "" || chelator.value == "" || cetearyl.value == "")) {
-      functionAlert("Mandatory fields (with the *) are not filled up. Please insert the missing values.");
-      return false;
-    }
-
-    for (i=1; i<19; i++){
-      var percentage = document.getElementById('ingredient_percentage_'+i);
-      if ((i>6) && (i<9) && (percentage.value == "")) {
-        functionAlert("Please select an option in the Product & Skin type field above.");
-        return false;
-      }
-      if ((i=2) && ((percentage.value < 1) || (percentage.value > 5))) {
-        debugger;
-        functionAlert("For Glycerin, please only insert values between 1 and 5%.");
-        return false;
-      }
-      if ((i=3) && ((percentage.value < 0.05) || (percentage.value > 0.2))) {
-        functionAlert("For Chelator, please only insert values between 0.05% and 0.2%.");
-        return false;
-      }
-      if ((i>8) && (i<11) && (percentage.value >= 1)) {
-        functionAlert("Please make sure that the percentages for oil soluble active in the Oil Phase are less than 1%.");
-        return false;
-      }
-      if ((i>14) && (i<17) && (percentage.value >= 1)) {
-        functionAlert("Please make sure that the percentages for oil soluble heat sensitive in the Cool Down Phase are less than 1%.");
-        return false;
-      }
-      if (percentage == null) continue;
-
-    calculatePercentages();
+  else if((glycerin == "" || chelator == "" || cetearyl == "")) {
+    functionAlert("Mandatory fields are not filled up. Please insert the missing values.");
+    return false;
   }
+
+  else if ((oil1 == "" || oil2 == "")) {
+    functionAlert("Please select an option in the Product & Skin type field above.");
+    return false;
+  }
+  else if (chelator > 0.2) {
+    functionAlert("Please don't insert more than 0.2% for Chelator.");
+    return false;
+  }
+/*  else if (glycerin < 1 || glycerin > 5) {
+    debugger;
+    functionAlert("For Glycerin, please only insert values between 1 and 5%.");
+    return false;
+  }
+  */
+  else if (emulsifier == "") {
+    functionAlert("Please select an option from the Emulsifier dropdown in the OIL phase.");
+    return false;
+  }
+  else if (fragance > 0.8) {
+    functionAlert("You added more than 0.8% for fragance which is too much. Recommended % (if allowed by IFRA) are up to 0.3% for the face and up to 0.8% for the body.");
+    return false;
+  }
+  else if ((opt_oil1 >= 1) || (opt_oil2 >= 1)) {
+    functionAlert("Please make sure that the percentages for oil soluble active in the Oil Phase are less than 1%.");
+    return false;
+  }
+  else if ((cooldown_optoil1 >= 1) || (cooldown_optoil2 >=1)) {
+    functionAlert("Please make sure that the percentages for oil soluble heat sensitive in the Cool Down Phase are less than 1%.");
+    return false;
+  }
+  else if ((water_sol1 > 99) || (water_sol2 > 99) ) {
+    functionAlert("You added a value too high for ingredients.");
+    return false;
+  }
+
+  else calculatePercentages();
 }
+
+/* 2nd step - calculate percentages */
 
 function calculatePercentages(){
   var j;
@@ -219,10 +237,10 @@ function gramsOrOuncesCheck() {
 }
 
 function currencyCheck() {
-/*  if (document.getElementById('euro-radio').checked){
-    mass_column.innerHTML = 'Ingredient cost per kg';
-  }
-  else {
-    mass_column.innerHTML = 'Ingredient cost per pound';
-  } */
+  /*  if (document.getElementById('euro-radio').checked){
+  mass_column.innerHTML = 'Ingredient cost per kg';
+}
+else {
+mass_column.innerHTML = 'Ingredient cost per pound';
+} */
 }
