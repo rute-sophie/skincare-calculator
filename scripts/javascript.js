@@ -30,6 +30,17 @@ selectElement.addEventListener('change', (event) => {
 var calculate_button = document.getElementById('calculate-button');
 calculate_button.onclick = verifyPercentages;
 
+/* Alert box */
+function functionAlert(msg, myYes) {
+          var confirmBox = $("#confirm");
+          confirmBox.find(".message").text(msg);
+          confirmBox.find(".yes").unbind().click(function() {
+             confirmBox.hide();
+          });
+          confirmBox.find(".yes").click(myYes);
+          confirmBox.show();
+       }
+
 /* 1st step - verify percentages */
 function verifyPercentages(){
 
@@ -37,32 +48,43 @@ function verifyPercentages(){
   var i;
 
   if (batch.value === "") {
-    alert ("Please insert value in Batch Size field");
+    functionAlert("Please insert value in Batch Size field.");
     return false;
   }
-  else {
+
+    var glycerin = document.getElementById('ingredient_percentage_'+2);
+    var chelator = document.getElementById('ingredient_percentage_'+3);
+    var cetearyl = document.getElementById('ingredient_percentage_'+11);
+
+    if((glycerin.value == "" || chelator.value == "" || cetearyl.value == "")) {
+      functionAlert("Mandatory fields (with the *) are not filled up. Please insert the missing values.");
+      return false;
+    }
+
     for (i=1; i<19; i++){
       var percentage = document.getElementById('ingredient_percentage_'+i);
-      if( (((i>1) && (i<4)) || (i==11)) && (percentage.value == "")) {
-        alert ("Mandatory fields (with the *) are not filled up. Please insert the values.");
+      if ((i>6) && (i<9) && (percentage.value == "")) {
+        functionAlert("Please select an option in the Product & Skin type field above.");
         return false;
       }
-      if ((i>6) && (i<9) && (percentage.value == "")) {
-        alert ("Please select an option in the Product & Skin type field above");
+      if ((i=2) && ((percentage.value < 1) || (percentage.value > 5))) {
+        debugger;
+        functionAlert("For Glycerin, please only insert values between 1 and 5%.");
+        return false;
+      }
+      if ((i=3) && ((percentage.value < 0.05) || (percentage.value > 0.2))) {
+        functionAlert("For Chelator, please only insert values between 0.05% and 0.2%.");
         return false;
       }
       if ((i>8) && (i<11) && (percentage.value >= 1)) {
-        debugger;
-        alert ("Please make sure that the percentages for oil soluble active in the Oil Phase are less than 1%");
+        functionAlert("Please make sure that the percentages for oil soluble active in the Oil Phase are less than 1%.");
         return false;
       }
       if ((i>14) && (i<17) && (percentage.value >= 1)) {
-        debugger;
-        alert ("Please make sure that the percentages for oil soluble heat sensitive in the Cool Down Phase are less than 1%");
+        functionAlert("Please make sure that the percentages for oil soluble heat sensitive in the Cool Down Phase are less than 1%.");
         return false;
       }
       if (percentage == null) continue;
-    }
 
     calculatePercentages();
   }

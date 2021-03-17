@@ -144,19 +144,19 @@ input#euro-radio{
 }
 
 input[type=radio] {
-    width: 20px;
-    height: 10px;
-    margin: 5px 5px 5px 10px;
+  width: 20px;
+  height: 10px;
+  margin: 5px 5px 5px 10px;
 }
 
 input[type=button] {
-    width: 60px;
-    height: 20px;
-    margin-top: 25px;
-    margin-right: 5px;
-    background-color: #5f6c7a;
-    border-radius: 4px;
-    color: #fff;
+  width: 60px;
+  height: 20px;
+  margin-top: 25px;
+  margin-right: 5px;
+  background-color: #5f6c7a;
+  border-radius: 4px;
+  color: #fff;
 }
 
 input[type=button]:focus {
@@ -205,11 +205,11 @@ td {
 }
 
 .right {
-   text-align: center;
- }
+  text-align: center;
+}
 
 tr:nth-child(odd) {
-    background: rgba(112, 112, 112, 0.1);
+  background: rgba(112, 112, 112, 0.1);
 }
 
 #myform {
@@ -264,6 +264,39 @@ tr:nth-child(odd) {
   width: 11%;
 }
 
+#confirm {
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  background-color: #9099a4;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  position: fixed;
+  width: 250px;
+  left: 50%;
+  margin-left: -100px;
+  padding: 6px 8px 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#confirm button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ced4c5;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+
+#confirm .message {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
 
 
 input[placeholder] { text-overflow: ellipsis; }
