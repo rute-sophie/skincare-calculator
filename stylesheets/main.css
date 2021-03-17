@@ -234,7 +234,7 @@ tr:nth-child(odd) {
   font-weight: bold;
   background-color: #9099a4;
   text-align: center;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 #total_percentage, #total_batch, #total_ingredient_cost, #total_formula_cost {
