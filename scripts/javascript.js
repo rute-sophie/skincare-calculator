@@ -92,11 +92,11 @@ function verifyPercentages(){
     functionAlert("You added more than 0.8% for fragance which is too much. Recommended % (if allowed by IFRA) are up to 0.3% for the face and up to 0.8% for the body.");
     return false;
   }
-  else if ((opt_oil1 >= 1) || (opt_oil2 >= 1)) {
+  else if ((opt_oil1 > 1) || (opt_oil2 > 1)) {
     functionAlert("Please make sure that the percentages for oil soluble active in the Oil Phase are less than 1%.");
     return false;
   }
-  else if ((cooldown_optoil1 >= 1) || (cooldown_optoil2 >=1)) {
+  else if ((cooldown_optoil1 > 1) || (cooldown_optoil2 > 1)) {
     functionAlert("Please make sure that the percentages for oil soluble heat sensitive in the Cool Down Phase are less than 1%.");
     return false;
   }
