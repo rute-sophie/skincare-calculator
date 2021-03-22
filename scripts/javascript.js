@@ -93,11 +93,11 @@ function verifyPercentages(){
     return false;
   }
   else if ((opt_oil1 > 1) || (opt_oil2 > 1)) {
-    functionAlert("Please make sure that the percentages for oil soluble active in the Oil Phase are less than 1%.");
+    functionAlert("Please make sure that the percentages for oil soluble actives in the Oil Phase are less than 1%.");
     return false;
   }
   else if ((cooldown_optoil1 > 1) || (cooldown_optoil2 > 1)) {
-    functionAlert("Please make sure that the percentages for oil soluble heat sensitive in the Cool Down Phase are less than 1%.");
+    functionAlert("Please make sure that the percentages for oil soluble heat sensitives in the Cool Down Phase are less than 1%.");
     return false;
   }
   else if ((water_sol1 > 20) || (water_sol2 > 20) || (water_sol3 > 20) || (water_sol4 > 20) ) {
