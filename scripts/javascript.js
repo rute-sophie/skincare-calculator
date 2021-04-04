@@ -174,8 +174,9 @@ function calculateIngredientCost (){
     if(batchGramsOunces.value == '') continue;
     var batchGramsOuncesValue = parseFloat(batchGramsOunces.value);
     var ingredientCostValue = parseFloat(ingredientCost.value).toFixed(2);
-    formulaCostValue = batchGramsOuncesValue * ingredientCostValue;
-    formulaCost.value = (formulaCostValue/1000).toFixed(2);
+    debugger;
+    formulaCostValue = (batchGramsOuncesValue/16) * ingredientCostValue;
+    formulaCost.value = formulaCostValue.toFixed(2);
   }
 
   calculateTotals();
