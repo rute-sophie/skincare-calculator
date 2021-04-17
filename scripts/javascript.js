@@ -1,1 +1,250 @@
-var _0x4d14=['Please\x20don\x27t\x20insert\x20more\x20than\x200.2%\x20for\x20Chelator.','ingredient_percentage_11','calculate-button','value','return\x20false;','unbind','ingredient_percentage_','#confirm','746508SlPnOx','ingredient_percentage_12','find','ingredient_percentage_5','querySelector','total_ingredient_cost','Grams\x20to\x20be\x20added','.yes','dry-skin-cream','Mandatory\x20fields\x20are\x20not\x20filled\x20up.\x20Please\x20insert\x20the\x20missing\x20values.','Please\x20make\x20sure\x20that\x20the\x20percentages\x20for\x20oil\x20soluble\x20heat\x20sensitives\x20in\x20the\x20Cool\x20Down\x20Phase\x20are\x20less\x20than\x201%.','batch-size','ingredient_percentage_9','Ingredient\x20cost\x20per\x20kg','Ingredient\x20cost\x20per\x20pound','getElementById','ingredient_percentage_17','4DsrVOx','ingredient_percentage_14','ingredient_percentage_7','Please\x20insert\x20value\x20in\x20Batch\x20Size\x20field.','ingredient_percentage_15','Please\x20select\x20an\x20option\x20in\x20the\x20Product\x20&\x20Skin\x20type\x20field\x20above.','grams_ounces_12','You\x20added\x20more\x20than\x200.8%\x20for\x20fragance\x20which\x20is\x20too\x20much.\x20Recommended\x20%\x20(if\x20allowed\x20by\x20IFRA)\x20are\x20up\x20to\x200.3%\x20for\x20the\x20face\x20and\x20up\x20to\x200.8%\x20for\x20the\x20body.','ingredient_percentage_1','4sBUzue','oily-skin-cream','#emulsifier-blend','210731TaHkXn','text','normal-skin-cream','Please\x20select\x20an\x20option\x20from\x20the\x20Emulsifier\x20dropdown\x20in\x20the\x20OIL\x20phase.','123679cBYPop','total_batch','grams_ounces_','ingredient_percentage_10','ingredient_cost_','ingredient_percentage_8','oncontextmenu','target','ingredient_percentage_16','toFixed','958764PBxQgw','41746BIUrtF','.message','hide','total_percentage','5SfaVDh','Ounces\x20to\x20be\x20added','innerHTML','batch-column','527280ASSQCZ','#product-skin-type','addEventListener','194641bHGxSn','cost_formula_','total_formula_cost','click'];var _0x14732f=_0x48fa;(function(_0x301b8c,_0x752271){var _0x45e99c=_0x48fa;while(!![]){try{var _0x5dd8af=parseInt(_0x45e99c(0xf6))+parseInt(_0x45e99c(0xe5))*-parseInt(_0x45e99c(0xe8))+-parseInt(_0x45e99c(0x102))+parseInt(_0x45e99c(0x10e))+parseInt(_0x45e99c(0xff))+-parseInt(_0x45e99c(0xf7))*parseInt(_0x45e99c(0xfb))+-parseInt(_0x45e99c(0x11f))*parseInt(_0x45e99c(0xec));if(_0x5dd8af===_0x752271)break;else _0x301b8c['push'](_0x301b8c['shift']());}catch(_0x2cd389){_0x301b8c['push'](_0x301b8c['shift']());}}}(_0x4d14,0x78015),document[_0x14732f(0xf2)]=new Function(_0x14732f(0x10a)));var batch=document[_0x14732f(0x11d)](_0x14732f(0x119)),batch_column=document[_0x14732f(0x11d)](_0x14732f(0xfe)),batch_value=batch[_0x14732f(0x109)],mass_column=document['getElementById']('mass-column'),selectElement=document[_0x14732f(0x112)](_0x14732f(0x100));selectElement[_0x14732f(0x101)]('change',_0x4bcdf4=>{var _0x5a6b78=_0x14732f,_0x1b46f4=document['querySelector']('#oil-ester-1'),_0x2d8c1d=document[_0x5a6b78(0x112)]('#oil-ester-2');switch(_0x4bcdf4[_0x5a6b78(0xf3)]['value']){case _0x5a6b78(0xe6):ingredient_percentage_7['value']='2%',ingredient_percentage_8[_0x5a6b78(0x109)]='2%';break;case _0x5a6b78(0xea):ingredient_percentage_7[_0x5a6b78(0x109)]='5%',ingredient_percentage_8[_0x5a6b78(0x109)]='5%';break;case _0x5a6b78(0x116):ingredient_percentage_7['value']='7%',ingredient_percentage_8[_0x5a6b78(0x109)]='7%';break;}});var calculate_button=document[_0x14732f(0x11d)](_0x14732f(0x108));calculate_button['onclick']=verifyPercentages;function functionAlert(_0x1fa445,_0x1cc8c8){var _0x572c8f=_0x14732f,_0x68b4cb=$(_0x572c8f(0x10d));_0x68b4cb[_0x572c8f(0x110)](_0x572c8f(0xf8))[_0x572c8f(0xe9)](_0x1fa445),_0x68b4cb[_0x572c8f(0x110)](_0x572c8f(0x115))[_0x572c8f(0x10b)]()[_0x572c8f(0x105)](function(){var _0x216868=_0x572c8f;_0x68b4cb[_0x216868(0xf9)]();}),_0x68b4cb['find'](_0x572c8f(0x115))[_0x572c8f(0x105)](_0x1cc8c8),_0x68b4cb['show']();}function verifyPercentages(){var _0x2a042b=_0x14732f;debugger;var _0x4955b8=document[_0x2a042b(0x11d)]('ingredient_percentage_2')[_0x2a042b(0x109)],_0xf22b6e=document[_0x2a042b(0x11d)]('ingredient_percentage_3')[_0x2a042b(0x109)],_0x5efdb9=document['getElementById'](_0x2a042b(0x111))[_0x2a042b(0x109)],_0xc12c83=document[_0x2a042b(0x11d)]('ingredient_percentage_6')['value'],_0x410234=document[_0x2a042b(0x11d)](_0x2a042b(0x11e))[_0x2a042b(0x109)],_0x4607fd=document[_0x2a042b(0x11d)]('ingredient_percentage_18')[_0x2a042b(0x109)],_0x287313=document[_0x2a042b(0x11d)](_0x2a042b(0x121))['value'],_0x286af2=document['getElementById'](_0x2a042b(0xf1))[_0x2a042b(0x109)],_0x57a6ee=document[_0x2a042b(0x11d)](_0x2a042b(0x11a))[_0x2a042b(0x109)],_0x20b001=document[_0x2a042b(0x11d)](_0x2a042b(0xef))[_0x2a042b(0x109)],_0x4c2bfc=document[_0x2a042b(0x11d)](_0x2a042b(0x107))[_0x2a042b(0x109)],_0x4ed1de=document[_0x2a042b(0x112)](_0x2a042b(0xe7))['value'],_0x5dd225=document['getElementById'](_0x2a042b(0x120))[_0x2a042b(0x109)],_0x498d03=document[_0x2a042b(0x11d)](_0x2a042b(0x123))['value'],_0x10de1f=document[_0x2a042b(0x11d)](_0x2a042b(0xf4))[_0x2a042b(0x109)];if(batch[_0x2a042b(0x109)]==='')return functionAlert(_0x2a042b(0x122)),![];else{if(_0x4955b8==''||_0xf22b6e==''||_0x4c2bfc=='')return functionAlert(_0x2a042b(0x117)),![];else{if(_0x287313==''||_0x286af2=='')return functionAlert(_0x2a042b(0x124)),![];else{if(_0xf22b6e>0.2)return functionAlert(_0x2a042b(0x106)),![];else{if(_0x4ed1de=='')return functionAlert(_0x2a042b(0xeb)),![];else{if(_0x5dd225>0.8)return functionAlert(_0x2a042b(0xe3)),![];else{if(_0x57a6ee>0x1||_0x20b001>0x1)return functionAlert('Please\x20make\x20sure\x20that\x20the\x20percentages\x20for\x20oil\x20soluble\x20actives\x20in\x20the\x20Oil\x20Phase\x20are\x20less\x20than\x201%.'),![];else{if(_0x498d03>0x1||_0x10de1f>0x1)return functionAlert(_0x2a042b(0x118)),![];else{if(_0x5efdb9>0x14||_0xc12c83>0x14||_0x410234>0x14||_0x4607fd>0x14)return functionAlert('You\x20added\x20a\x20value\x20too\x20high\x20for\x20ingredients.'),![];else calculatePercentages();}}}}}}}}}function calculatePercentages(){var _0x3ef1fa=_0x14732f,_0x11d8da,_0x41bc87=0x0;for(_0x11d8da=0x1;_0x11d8da<0x13;_0x11d8da++){var _0x33821b=document[_0x3ef1fa(0x11d)](_0x3ef1fa(0xee)+_0x11d8da),_0x12d8dc=document[_0x3ef1fa(0x11d)]('ingredient_percentage_'+_0x11d8da);if(_0x12d8dc[_0x3ef1fa(0x109)]===''){_0x33821b[_0x3ef1fa(0x109)]='';continue;}var _0x4c4129=parseFloat(_0x12d8dc[_0x3ef1fa(0x109)]);_0x33821b[_0x3ef1fa(0x109)]=(_0x4c4129/0x64*batch[_0x3ef1fa(0x109)])[_0x3ef1fa(0xf5)](0x3),(_0x11d8da>0x6&&_0x11d8da<0xc||_0x11d8da>0xd&&_0x11d8da<0x11)&&(_0x41bc87+=_0x4c4129);}var _0x5cbced=document[_0x3ef1fa(0x11d)](_0x3ef1fa(0x10f)),_0x3c82f3=_0x41bc87*0.25;if(_0x3c82f3<0x3)_0x41bc87=0x3;else{if(_0x3c82f3>0x7)_0x41bc87=0x7;else _0x41bc87=_0x3c82f3[_0x3ef1fa(0xf5)](0x3);}_0x5cbced['value']=_0x41bc87+'%';var _0x571133=document['getElementById'](_0x3ef1fa(0xe2));_0x571133[_0x3ef1fa(0x109)]=(_0x41bc87/0x64*batch[_0x3ef1fa(0x109)])[_0x3ef1fa(0xf5)](0x3),calculateWaterPercentage();}function calculateWaterPercentage(){var _0x27e9e4=_0x14732f,_0x5944cc=0x0;for(i=0x2;i<0x13;i++){var _0x2a5fcc=document['getElementById'](_0x27e9e4(0x10c)+i);if(_0x2a5fcc[_0x27e9e4(0x109)]=='')continue;var _0x17b90d=parseFloat(_0x2a5fcc['value']);_0x5944cc+=_0x17b90d;}var _0x1d38c9=document[_0x27e9e4(0x11d)](_0x27e9e4(0xe4)),_0x3f521b=0x64-_0x5944cc;_0x1d38c9['value']=_0x3f521b[_0x27e9e4(0xf5)](0x3)+'%';var _0x5a5b6c=document['getElementById']('grams_ounces_1');_0x5a5b6c[_0x27e9e4(0x109)]=(_0x3f521b/0x64*batch[_0x27e9e4(0x109)])[_0x27e9e4(0xf5)](0x3),calculateIngredientCost();}function calculateIngredientCost(){var _0x18f9f2=_0x14732f;for(i=0x1;i<0x13;i++){var _0x429c5f=document[_0x18f9f2(0x11d)](_0x18f9f2(0xf0)+i);if(_0x429c5f[_0x18f9f2(0x109)]=='')continue;var _0xfe6ecf=document[_0x18f9f2(0x11d)]('cost_formula_'+i),_0x3bb740=document[_0x18f9f2(0x11d)]('grams_ounces_'+i);if(_0x3bb740['value']=='')continue;var _0x1b5f73=parseFloat(_0x3bb740['value']),_0x175284=parseFloat(_0x429c5f[_0x18f9f2(0x109)])[_0x18f9f2(0xf5)](0x3);debugger;formulaCostValue=_0x1b5f73/0x10*_0x175284,_0xfe6ecf[_0x18f9f2(0x109)]=formulaCostValue['toFixed'](0x3);}calculateTotals();}function _0x48fa(_0x5e7520,_0x4f7f6b){_0x5e7520=_0x5e7520-0xe2;var _0x4d1450=_0x4d14[_0x5e7520];return _0x4d1450;}function calculateTotals(){var _0x23c0ff=_0x14732f;debugger;var _0x127743=0x0,_0x1a3df0=0x0,_0x463311=0x0,_0x3eca83=0x0;for(i=0x1;i<0x13;i++){var _0x47fc30=document[_0x23c0ff(0x11d)](_0x23c0ff(0x10c)+i);if(_0x47fc30[_0x23c0ff(0x109)]=='')continue;var _0x4ad762=parseFloat(_0x47fc30[_0x23c0ff(0x109)]);_0x127743+=_0x4ad762;}for(i=0x1;i<0x13;i++){var _0x392c57=document[_0x23c0ff(0x11d)]('grams_ounces_'+i);if(_0x392c57[_0x23c0ff(0x109)]=='')continue;var _0x3664b5=parseFloat(_0x392c57[_0x23c0ff(0x109)]);_0x1a3df0+=_0x3664b5;}for(i=0x1;i<0x13;i++){var _0x4314d3=document[_0x23c0ff(0x11d)](_0x23c0ff(0xf0)+i);if(_0x4314d3[_0x23c0ff(0x109)]=='')continue;var _0x42030b=parseFloat(_0x4314d3[_0x23c0ff(0x109)]);_0x463311+=_0x42030b;}for(i=0x1;i<0x13;i++){var _0x2531da=document[_0x23c0ff(0x11d)](_0x23c0ff(0x103)+i);if(_0x2531da[_0x23c0ff(0x109)]=='')continue;var _0x6a61e7=parseFloat(_0x2531da[_0x23c0ff(0x109)]);_0x3eca83+=_0x6a61e7;}var _0x2c8003=document[_0x23c0ff(0x11d)](_0x23c0ff(0xfa)),_0x51b9e3=document[_0x23c0ff(0x11d)](_0x23c0ff(0xed)),_0x142a9b=document[_0x23c0ff(0x11d)](_0x23c0ff(0x113)),_0x3032c3=document[_0x23c0ff(0x11d)](_0x23c0ff(0x104));_0x2c8003[_0x23c0ff(0x109)]=_0x127743[_0x23c0ff(0xf5)]()+'%',_0x51b9e3[_0x23c0ff(0x109)]=_0x1a3df0[_0x23c0ff(0xf5)](0x3),_0x142a9b[_0x23c0ff(0x109)]=_0x463311[_0x23c0ff(0xf5)](0x3),_0x3032c3[_0x23c0ff(0x109)]=_0x3eca83[_0x23c0ff(0xf5)](0x3);}function gramsOrOuncesCheck(){var _0x47235b=_0x14732f;document['getElementById']('grams-batch')['checked']?(batch_column[_0x47235b(0xfd)]=_0x47235b(0x114),mass_column[_0x47235b(0xfd)]=_0x47235b(0x11b)):(batch_column[_0x47235b(0xfd)]=_0x47235b(0xfc),mass_column[_0x47235b(0xfd)]=_0x47235b(0x11c));}function currencyCheck(){}
+/* Global Variables */
+document.oncontextmenu =new Function("return false;")
+var batch = document.getElementById('batch-size');
+var batch_column = document.getElementById('batch-column');
+var batch_value = batch.value;
+var mass_column = document.getElementById('mass-column');
+var selectElement = document.querySelector('#product-skin-type');
+
+/* Event Listener for main dropbox */
+selectElement.addEventListener('change', (event) => {
+  var oil_ester_1 = document.querySelector('#oil-ester-1');
+  var oil_ester_2 = document.querySelector('#oil-ester-2');
+
+  switch (event.target.value){
+    case "oily-skin-cream":
+    ingredient_percentage_7.value = "2%";
+    ingredient_percentage_8.value = "2%";
+    break;
+    case "normal-skin-cream":
+    ingredient_percentage_7.value = "5%";
+    ingredient_percentage_8.value = "5%";
+    break;
+    case "dry-skin-cream":
+    ingredient_percentage_7.value = "7%";
+    ingredient_percentage_8.value = "7%";
+    break;
+  }
+});
+
+/* Event Listener for Calculate button */
+var calculate_button = document.getElementById('calculate-button');
+calculate_button.onclick = verifyPercentages;
+
+/* Alert box */
+function functionAlert(msg, myYes) {
+  var confirmBox = $("#confirm");
+  confirmBox.find(".message").text(msg);
+  confirmBox.find(".yes").unbind().click(function() {
+    confirmBox.hide();
+  });
+  confirmBox.find(".yes").click(myYes);
+  confirmBox.show();
+}
+
+/* 1st step - verify percentages */
+function verifyPercentages(){
+  debugger;
+  var glycerin = document.getElementById('ingredient_percentage_2').value;
+  var chelator = document.getElementById('ingredient_percentage_3').value;
+  var water_sol1 = document.getElementById('ingredient_percentage_5').value;
+  var water_sol2 = document.getElementById('ingredient_percentage_6').value;
+  var water_sol3 = document.getElementById('ingredient_percentage_17').value;
+  var water_sol4 = document.getElementById('ingredient_percentage_18').value;
+  var oil1 = document.getElementById('ingredient_percentage_7').value;
+  var oil2 = document.getElementById('ingredient_percentage_8').value;
+  var opt_oil1 = document.getElementById('ingredient_percentage_9').value;
+  var opt_oil2 = document.getElementById('ingredient_percentage_10').value;
+  var cetearyl = document.getElementById('ingredient_percentage_11').value;
+  var emulsifier = document.querySelector('#emulsifier-blend').value;
+  var fragance = document.getElementById('ingredient_percentage_14').value;
+  var cooldown_optoil1 = document.getElementById('ingredient_percentage_15').value;
+  var cooldown_optoil2 = document.getElementById('ingredient_percentage_16').value;
+
+  if (batch.value === "") {
+    functionAlert("Please insert value in Batch Size field.");
+    return false;
+  }
+
+  else if((glycerin == "" || chelator == "" || cetearyl == "")) {
+    functionAlert("Mandatory fields are not filled up. Please insert the missing values.");
+    return false;
+  }
+
+  else if ((oil1 == "" || oil2 == "")) {
+    functionAlert("Please select an option in the Product & Skin type field above.");
+    return false;
+  }
+  else if (chelator > 0.2) {
+    functionAlert("Please don't insert more than 0.2% for Chelator.");
+    return false;
+  }
+/*  else if (glycerin < 1 || glycerin > 5) {
+    debugger;
+    functionAlert("For Glycerin, please only insert values between 1 and 5%.");
+    return false;
+  }
+  */
+  else if (emulsifier == "") {
+    functionAlert("Please select an option from the Emulsifier dropdown in the OIL phase.");
+    return false;
+  }
+  else if (fragance > 0.8) {
+    functionAlert("You added more than 0.8% for fragance which is too much. Recommended % (if allowed by IFRA) are up to 0.3% for the face and up to 0.8% for the body.");
+    return false;
+  }
+  else if ((opt_oil1 > 1) || (opt_oil2 > 1)) {
+    functionAlert("Please make sure that the percentages for oil soluble actives in the Oil Phase are less than 1%.");
+    return false;
+  }
+  else if ((cooldown_optoil1 > 1) || (cooldown_optoil2 > 1)) {
+    functionAlert("Please make sure that the percentages for oil soluble heat sensitives in the Cool Down Phase are less than 1%.");
+    return false;
+  }
+  else if ((water_sol1 > 20) || (water_sol2 > 20) || (water_sol3 > 20) || (water_sol4 > 20) ) {
+    functionAlert("You added a value too high for ingredients.");
+    return false;
+  }
+
+  else calculatePercentages();
+}
+
+/* 2nd step - calculate percentages */
+
+function calculatePercentages(){
+  var j;
+  var emulsifierCounter = 0;
+
+  for (j = 1; j < 19; j++) {
+    var result = document.getElementById('grams_ounces_' + j);
+    var percentage = document.getElementById('ingredient_percentage_'+j);
+    if (percentage.value === "") {
+      result.value = "";
+      continue;
+    }
+    var percentagevalue = parseFloat(percentage.value);
+    result.value = ((percentagevalue/100.0) * batch.value).toFixed(3);
+
+    if (((j>6) && (j<12)) || ((j>13) && (j<17))) {
+      emulsifierCounter += percentagevalue;
+    }
+  }
+  var emulsifier_blend = document.getElementById('ingredient_percentage_12');
+  var emulsifier_blend_verified_value = emulsifierCounter * 0.25;
+
+  if(emulsifier_blend_verified_value < 3)
+  emulsifierCounter = 3;
+  else if(emulsifier_blend_verified_value > 7)
+  emulsifierCounter= 7;
+  else emulsifierCounter = emulsifier_blend_verified_value.toFixed(3);
+
+  emulsifier_blend.value = emulsifierCounter + "%";
+  var emulsifier_blend_result = document.getElementById('grams_ounces_12');
+  emulsifier_blend_result.value = ((emulsifierCounter/100.0) * batch.value).toFixed(3);
+
+  calculateWaterPercentage();
+}
+
+function calculateWaterPercentage (){
+  var percentageSumCounter = 0;
+
+  for (i = 2; i < 19; i++) {
+    var finalPercentage = document.getElementById('ingredient_percentage_'+ i);
+
+    if(finalPercentage.value == '') continue;
+    var finalPercentagevalue = parseFloat(finalPercentage.value);
+
+    percentageSumCounter += finalPercentagevalue;
+  }
+
+  var water = document.getElementById('ingredient_percentage_1');
+  var waterValue = 100 - percentageSumCounter;
+  water.value = waterValue.toFixed(3) + "%";
+  var result = document.getElementById('grams_ounces_1');
+  result.value = ((waterValue/100) * batch.value).toFixed(3);
+
+  calculateIngredientCost();
+}
+
+function calculateIngredientCost (){
+  for (i = 1; i < 19; i++) {
+    var ingredientCost = document.getElementById('ingredient_cost_'+ i);
+    if(ingredientCost.value == '') continue;
+    var formulaCost = document.getElementById('cost_formula_'+ i);
+    var batchGramsOunces = document.getElementById('grams_ounces_'+ i);
+    if(batchGramsOunces.value == '') continue;
+    var batchGramsOuncesValue = parseFloat(batchGramsOunces.value);
+    var ingredientCostValue = parseFloat(ingredientCost.value).toFixed(3);
+    debugger;
+    formulaCostValue = (batchGramsOuncesValue/16) * ingredientCostValue;
+    formulaCost.value = formulaCostValue.toFixed(3);
+  }
+
+  calculateTotals();
+}
+
+function calculateTotals(){
+  debugger;
+  var percentageCounter = 0;
+  var batchCounter = 0;
+  var ingredientCostCounter = 0;
+  var formulaCostCounter = 0;
+
+  for (i = 1; i < 19; i++) {
+    var percentage = document.getElementById('ingredient_percentage_'+ i);
+    if(percentage.value == '') continue;
+    var percentageValue = parseFloat(percentage.value);
+    percentageCounter += percentageValue;
+  }
+
+  for (i = 1; i < 19; i++) {
+    var batch = document.getElementById('grams_ounces_'+ i);
+    if(batch.value == '') continue;
+    var batchValue = parseFloat(batch.value);
+    batchCounter += batchValue;
+  }
+
+  for (i = 1; i < 19; i++) {
+    var ingredientCost = document.getElementById('ingredient_cost_'+ i);
+    if(ingredientCost.value == '') continue;
+    var ingredientCostValue = parseFloat(ingredientCost.value);
+    ingredientCostCounter += ingredientCostValue;
+  }
+
+  for (i = 1; i < 19; i++) {
+    var formulaCost = document.getElementById('cost_formula_'+ i);
+    if(formulaCost.value == '') continue;
+    var formulaCostValue = parseFloat(formulaCost.value);
+    formulaCostCounter += formulaCostValue;
+  }
+
+  var totalPercentage = document.getElementById('total_percentage');
+  var totalBatch = document.getElementById('total_batch');
+  var totalIngredientCost = document.getElementById('total_ingredient_cost');
+  var totalFormulaCost = document.getElementById('total_formula_cost');
+
+  totalPercentage.value = percentageCounter.toFixed() + "%";
+  totalBatch.value = batchCounter.toFixed(3);
+  totalIngredientCost.value = ingredientCostCounter.toFixed(3);
+  totalFormulaCost.value = formulaCostCounter.toFixed(3);
+}
+
+function gramsOrOuncesCheck() {
+  if (document.getElementById('grams-batch').checked){
+    batch_column.innerHTML = 'Grams to be added';
+    mass_column.innerHTML = 'Ingredient cost per kg';
+  }
+  else {
+    batch_column.innerHTML = 'Ounces to be added';
+    mass_column.innerHTML = 'Ingredient cost per pound';
+  }
+}
+
+function currencyCheck() {
+  /*  if (document.getElementById('euro-radio').checked){
+  mass_column.innerHTML = 'Ingredient cost per kg';
+}
+else {
+mass_column.innerHTML = 'Ingredient cost per pound';
+} */
+}

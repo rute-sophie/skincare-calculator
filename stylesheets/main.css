@@ -1,13 +1,14 @@
-h2 {
+h1 {
   color: #545454;
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 18px;
+  margin-top: 15px;
   margin-bottom: 10px;
   margin-left: 15px;
   padding-left: 10px;
 }
 
 p {
+  margin-top: 20px;
   margin-left: 18px;
   margin-bottom: 1px;
   padding-left: 10px;
@@ -214,7 +215,7 @@ tr:nth-child(odd) {
 
 #myform {
   margin-left: 5px;
-  margin-top: 10px;
+  margin-top: 15px;
   width: auto;
 }
 
