@@ -137,7 +137,6 @@ tr:nth-child(odd) {
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #bfc1d1;
   background-blend-mode: lighten;
   font-weight: bold;
   color: #000000;
@@ -149,7 +148,6 @@ tr:nth-child(odd) {
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #ced4c5;
   background-blend-mode: lighten;
   font-weight: bold;
   text-align: center;
@@ -159,7 +157,6 @@ tr:nth-child(odd) {
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #d39595;
   background-blend-mode: lighten;
   font-weight: bold;
   text-align: center;
