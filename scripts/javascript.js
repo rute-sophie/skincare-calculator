@@ -1,5 +1,4 @@
 /* Global Variables */
-document.oncontextmenu =new Function("return false;")
 var batch = document.getElementById('batch-size');
 var batch_column = document.getElementById('batch-column');
 var batch_value = batch.value;

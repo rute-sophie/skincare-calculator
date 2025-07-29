@@ -1,299 +1,898 @@
+/* Elegant Feminine Skincare Calculator */
+
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Sophisticated color palette */
+:root {
+  --rose-gold: #e8b4b8;
+  --dusty-rose: #d4a5a5;
+  --soft-peach: #f4e4d6;
+  --warm-ivory: #faf6f1;
+  --sage-green: #a8b5a0;
+  --lavender-mist: #d8c4d8;
+  --champagne: #f7e7ce;
+  --text-charcoal: #2c2c2c;
+  --text-slate: #4a4a4a;
+  --text-muted: #6b6b6b;
+  --border-soft: #e8e0d8;
+  --shadow-delicate: 0 2px 20px rgba(232, 180, 184, 0.15);
+  --shadow-elegant: 0 8px 32px rgba(232, 180, 184, 0.2);
+  --radius-gentle: 12px;
+  --radius-soft: 8px;
+  --radius-pill: 50px;
+}
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, var(--warm-ivory) 0%, var(--soft-peach) 50%, var(--champagne) 100%);
+  color: var(--text-charcoal);
+  line-height: 1.7;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23e8b4b8" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Header styling */
 h1 {
-  color: #545454;
-  font-size: 14px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 15px;
-  padding-left: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0 10px 0;
+  color: var(--text-charcoal);
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
 }
 
 p {
-  margin-top: 20px;
-  margin-left: 18px;
-  margin-bottom: 1px;
-  padding-left: 10px;
+  text-align: center;
+  color: var(--text-slate);
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+  font-style: italic;
 }
 
-label{
-  padding-left: 30px;
-  font-weight: bold;
+/* Main container */
+.main-grid {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 180, 184, 0.2);
+  border-radius: var(--radius-gentle);
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1400px;
+  box-shadow: var(--shadow-elegant);
+  position: relative;
+  overflow: hidden;
 }
 
-input {
+.main-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--rose-gold), var(--lavender-mist), var(--sage-green));
+}
+
+/* Form styling - Consistent border size */
+#myform {
+  background: linear-gradient(135deg, var(--warm-ivory), var(--soft-peach));
+  padding: 30px;
+  border-radius: var(--radius-gentle);
+  margin: 30px 0;
+  border: 1px solid #d1d5db;
+  box-shadow: var(--shadow-delicate);
+}
+
+#myform label {
+  font-weight: 500;
+  color: var(--text-charcoal);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  display: inline-block;
+  position: relative;
+  min-width: 120px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#myform label::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--rose-gold);
+  transition: width 0.3s ease;
+}
+
+#myform label:hover::after {
+  width: 100%;
+}
+
+#myform input {
   font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  background-color: #fff;
-  color: #000;
-  border-style: none;
-  height: 15px;
-  width: 25px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius-gentle);
+  padding: 12px 16px;
+  color: var(--text-charcoal);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  margin-bottom: 15px;
+  margin-right: 15px;
+  vertical-align: middle;
 }
 
-input#fname {
+#myform input:focus {
+  outline: none;
+  border-color: var(--rose-gold);
+  box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.1);
+  background: white;
+}
+
+#myform select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius-gentle);
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+#myform select:focus {
+  outline: none;
+  border-color: var(--rose-gold);
+  box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.1);
+}
+
+/* Specific form input sizing with consistent border size */
+#myform input#fname {
   width: 350px;
-  height: 15px;
-  margin-left: 4px;
-  margin-bottom: 5px;
+  margin-left: 0;
+  margin-bottom: 15px;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
 }
 
-input#calculator-date {
-  width: 115px;
-  margin: 5px 5px 5px 87px;
+#myform input#calculator-date {
+  width: 250px;
+  margin: 0 15px 15px 87px;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
 }
 
-input#batch-size{
-  margin-left: 58px;
-  width: 35px;
+#myform input#batch-size {
+  width: 80px;
+  margin: 0 15px 15px 0;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
 }
 
-input#euro-radio{
-  margin-left: 51px;
-  width: 35px;
+#myform input[type=radio] {
+  width: 18px;
+  height: 18px;
+  margin: 0 8px 15px 10px;
+  accent-color: var(--rose-gold);
+  padding: 0;
+  vertical-align: middle;
+  border-radius: 50%;
 }
 
-input[type=radio] {
-  width: 20px;
-  height: 10px;
-  margin: 5px 5px 5px 10px;
+#myform select#product-skin-type {
+  width: 350px;
+  margin-left: 0;
+  margin-bottom: 15px;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+}
+
+/* Form row styling for better organization */
+#myform .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+#myform .form-group {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+#myform .form-group label {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+#myform .form-group input,
+#myform .form-group select {
+  margin-bottom: 0;
+}
+
+/* Radio button groups */
+#myform .radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#myform .radio-group label {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+#myform .radio-group input[type=radio] {
+  margin-bottom: 0;
+}
+
+/* Percentage inputs - adaptive sizing */
+input[id^="ingredient_percentage_"] {
+  width: auto;
+  min-width: 50px;
+  text-align: center;
+  padding: 8px 12px;
+}
+
+/* Cost inputs - adaptive sizing */
+input[id^="ingredient_cost_"] {
+  width: auto;
+  min-width: 80px;
+  text-align: center;
+  padding: 8px 12px;
+}
+
+/* Ingredient name inputs - consistent border size */
+.ingredient-text-editable {
+  width: fit-content;
+  min-width: 300px;
+  max-width: 450px;
+  text-align: left;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius-gentle);
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.ingredient-text-editable:focus {
+  border-color: var(--rose-gold);
+  box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.1);
+  background: white;
+  width: fit-content;
+}
+
+/* Specific sizing for different placeholder lengths - updated with longer widths */
+.ingredient-text-editable[placeholder*="Insert name of oil/ester/butter"] {
+  width: 400px;
+}
+
+.ingredient-text-editable[placeholder*="Water soluble ingredient"] {
+  width: 380px;
+}
+
+.ingredient-text-editable[placeholder*="oil soluble active"] {
+  width: 360px;
+}
+
+.ingredient-text-editable[placeholder*="Fragrance/essential oil"] {
+  width: 340px;
+}
+
+.ingredient-text-editable[placeholder*="oil soluble heat sensitive"] {
+  width: 390px;
+}
+
+.ingredient-text-editable[placeholder*="Water soluble heat sensitive"] {
+  width: 370px;
+}
+
+/* Table inputs - consistent border size */
+td input[type="text"] {
+  width: auto;
+  min-width: 40px;
+  text-align: center;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+}
+
+/* Output elements - consistent border size */
+output {
+  display: inline-block;
+  min-width: 50px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-charcoal);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
 }
 
 input[type=button] {
-  width: 60px;
-  height: 20px;
-  margin-top: 25px;
-  margin-right: 5px;
-  background-color: #5f6c7a;
-  border-radius: 4px;
-  color: #fff;
+  background: linear-gradient(135deg, var(--rose-gold), var(--dusty-rose));
+  border: none;
+  border-radius: var(--radius-pill);
+  color: white;
+  font-weight: 500;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-delicate);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
-input[type=button]:focus {
-  background-color: ##d6dbe0;
-  border: solid 2px black;
-}
-
-input:disabled{
-  background-color: #cbd1da;
-  color: #cccccc;
+input[type=button]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elegant);
+  background: linear-gradient(135deg, var(--dusty-rose), var(--rose-gold));
 }
 
 select {
-  font-size: 10px;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 1px;
-  margin: 5px;
+  font-size: 0.9rem;
+  border: 2px solid var(--border-soft);
+  border-radius: var(--radius-soft);
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
 }
 
-img{
-  float: right;
-  padding-right: 50px;
+select:focus {
+  outline: none;
+  border-color: var(--rose-gold);
+  box-shadow: 0 0 0 4px rgba(232, 180, 184, 0.1);
 }
 
+/* Ingredients grid */
+.ingredients-grid {
+  background: linear-gradient(135deg, var(--warm-ivory), var(--soft-peach));
+  border-radius: var(--radius-gentle);
+  padding: 30px;
+  margin: 40px 0;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-delicate);
+}
+
+/* Table styling */
 table {
-  table-layout:fixed;
-  width:100%;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--radius-soft);
+  overflow: hidden;
+  box-shadow: var(--shadow-delicate);
+  background: white;
 }
 
 th {
+  background: linear-gradient(135deg, var(--rose-gold), var(--dusty-rose));
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 18px 12px;
   text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #9099a4;
-  border-radius: 3px;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+th::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 td {
-  border-radius: 1px;
-  font-size: 10px;
-  padding: 5px;
+  padding: 16px 12px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--border-soft);
+  transition: all 0.3s ease;
 }
 
-tr:nth-child(odd) {
-  background: rgba(112, 112, 112, 0.1);
+tr:hover td {
+  background: rgba(232, 180, 184, 0.05);
 }
 
-.main-grid{
-  background-color: #e0e0e0;
-  display: block;
-  border-color: #545454;
-  margin-left: 12px;
-  margin-right: 5px;
-  padding: 5px;
-  border-radius: 20px;
-  width: 96%;
-  font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.ingredients-grid{
-  margin-top: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #eae4e1;
-  border-radius: 5px;
-}
-
+/* Phase styling - Updated with pastel yellow for oil phase */
 .water-phase {
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: lighten;
-  font-weight: bold;
-  color: #000000;
+  background: linear-gradient(135deg, #d4e6f7, #c8dff0);
+  font-weight: 600;
+  color: #5a7a9a;
   text-align: center;
   width: 10%;
+  position: relative;
+  box-shadow: var(--shadow-delicate);
+}
+
+.water-phase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  pointer-events: none;
 }
 
 .oil-phase {
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: lighten;
-  font-weight: bold;
+  background: linear-gradient(135deg, #f7f4d4, #f0edc8);
+  font-weight: 600;
   text-align: center;
+  position: relative;
+  color: #8a7a5a;
+  box-shadow: var(--shadow-delicate);
+}
+
+.oil-phase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  pointer-events: none;
 }
 
 .cooldown-phase {
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: lighten;
-  font-weight: bold;
+  background: linear-gradient(135deg, #e8eef2, #d8e0e6);
+  font-weight: 600;
   text-align: center;
+  position: relative;
+  color: #5a6b7a;
+  box-shadow: var(--shadow-delicate);
 }
 
+.cooldown-phase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  pointer-events: none;
+}
+
+.phases-span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 12px 8px;
+  display: block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+/* Row styling - Updated with pastel yellow for oil rows */
+.water-rows {
+  background: linear-gradient(135deg, rgba(212, 230, 247, 0.1), rgba(200, 223, 240, 0.05));
+}
+
+.oil-rows {
+  background: linear-gradient(135deg, rgba(247, 244, 212, 0.1), rgba(240, 237, 200, 0.05));
+}
+
+.cooldown-rows {
+  background: linear-gradient(135deg, rgba(232, 238, 242, 0.1), rgba(216, 224, 230, 0.05));
+}
+
+/* Calculator buttons */
 .calculator-buttons {
-  margin: 10px 25px 15px 500px;
-}
-
-.user-filled-cells  {
-  background-color: white;
-  border-radius: none;
-}
-
-.ingredient-text-editable{
-  width: 370px;
-  text-align: left;
-  text-overflow: ellipsis;
-}
-
-.water-rows{
-  background-color: #bfc1d1;
-}
-
-.oil-rows{
-  background-color: #ced4c5;
-}
-
-.cooldown-rows{
-  background-color: #d39595;
-}
-
-.footer{
   text-align: center;
+  margin: 40px 0;
 }
 
-.phases-span{
-  font-size: 13px;
-  border-radius: 5px;
+.calculator-buttons input[type=button] {
+  margin: 0 10px;
+  min-width: 120px;
 }
 
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: center;
-}
-
-#myform {
-  margin-left: 5px;
-  margin-top: 15px;
-  width: auto;
-}
-
-#product-skin-type {
-  width: 190px;
-  height: 15px;
-  margin-left: 11px;
-  border-style: none;
-}
-
-#emulsifier-blend {
-  border-style: none;
-}
-
+/* Total row */
 #total-row {
-  font-weight: bold;
-  background-color: #9099a4;
+  background: linear-gradient(135deg, var(--rose-gold), var(--dusty-rose));
+  color: white;
+  font-weight: 600;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
 #total_percentage, #total_batch, #total_ingredient_cost, #total_formula_cost {
-  font-weight: bold;
+  font-weight: 600;
+  color: var(--text-charcoal);
 }
 
-#th-phase {
-  width: 8%;
-}
+/* Column widths */
+#th-phase { width: 8%; }
+#th-ing-name { width: 54%; }
+#th-percentage { width: 8%; }
+#batch-column { width: 8%; }
+#mass-column { width: 11%; }
+#th-ing-cost { width: 11%; }
 
-#th-ing-name {
-  width: 54%;
-}
-
-#th-percentage {
-  width: 8%;
-}
-
-#batch-column {
-  width: 8%;
-}
-
-#mass-column {
-  width: 11%;
-}
-
-#th-ing-cost {
-  width: 11%;
-}
-
+/* Confirmation dialog */
 #confirm {
   display: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  background-color: #9099a4;
-  color: #FFFFFF;
-  border: 1px solid #000000;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-gentle);
   position: fixed;
-  width: 250px;
+  width: 350px;
   left: 50%;
   top: 40%;
-  margin-left: -100px;
-  padding: 6px 8px 8px;
-  box-sizing: border-box;
+  margin-left: -175px;
+  padding: 30px;
   text-align: center;
+  box-shadow: var(--shadow-elegant);
+  z-index: 1000;
 }
 
 #confirm button {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #ced4c5;
-  margin: 5px;
-  display: inline-block;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  padding: 5px;
-  text-align: center;
-  width: 80px;
+  background: linear-gradient(135deg, var(--rose-gold), var(--dusty-rose));
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 12px 24px;
+  color: white;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px;
+  min-width: 80px;
+}
+
+#confirm button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-delicate);
 }
 
 #confirm .message {
-  font-family: 'Montserrat', sans-serif;
-  text-align: left;
+  margin-bottom: 20px;
+  color: var(--text-slate);
+  line-height: 1.6;
 }
 
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
 
-input[placeholder] { text-overflow: ellipsis; }
-::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
-input:-moz-placeholder { text-overflow: ellipsis; }
+.footer p {
+  margin: 5px 0;
+}
+
+/* Utility classes */
+.left { text-align: left; }
+.right { text-align: center; }
+
+#product-skin-type {
+  width: 200px;
+  margin-left: 11px;
+}
+
+#emulsifier-blend {
+  border: 1px solid var(--border-soft);
+}
+
+/* Placeholder styling */
+input[placeholder] { 
+  text-overflow: ellipsis; 
+  color: var(--text-muted);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-grid {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  input#fname {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .ingredient-text-editable {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .calculator-buttons input[type=button] {
+    margin: 5px;
+    min-width: 100px;
+  }
+  
+  #myform {
+    padding: 20px;
+  }
+  
+  #myform input#fname {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  #myform select#product-skin-type {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  #myform .form-group {
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  #myform .radio-group {
+    flex-wrap: wrap;
+  }
+  
+  .ingredients-grid {
+    padding: 20px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--warm-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rose-gold);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dusty-rose);
+}
+
+/* Table inputs and outputs - same size */
+td input[type="text"] {
+  width: auto;
+  min-width: 60px;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+/* Output elements - longer horizontal size */
+output {
+  display: inline-block;
+  min-width: 70px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-charcoal);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  height: 40px;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+
+/* Percentage inputs and outputs - same size */
+input[id^="ingredient_percentage_"] {
+  width: auto;
+  min-width: 60px;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+/* Cost inputs and outputs - same size */
+input[id^="ingredient_cost_"] {
+  width: auto;
+  min-width: 80px;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+/* Grams/ounces outputs - same size as cost inputs */
+output[id^="grams_ounces_"] {
+  display: inline-block;
+  min-width: 80px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-charcoal);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  transition: all 0.3s ease;
+}
+
+/* Cost formula outputs - same size as cost inputs */
+output[id^="cost_formula_"] {
+  display: inline-block;
+  min-width: 80px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-charcoal);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  transition: all 0.3s ease;
+}
+
+/* Focus states for inputs */
+td input[type="text"]:focus,
+input[id^="ingredient_percentage_"]:focus,
+input[id^="ingredient_cost_"]:focus {
+  outline: none;
+  border-color: var(--rose-gold);
+  box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.1);
+  background: white;
+}
+
+/* Output elements - same vertical size as inputs */
+output {
+  display: inline-block;
+  min-width: 50px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-charcoal);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  height: 40px;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+
+/* Table inputs - fixed width of 50px */
+td input[type="text"] {
+  width: 50px;
+  min-width: 50px;
+  text-align: center;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+/* Percentage column vertical alignment */
+#th-percentage {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--rose-gold), var(--dusty-rose));
+  color: white;
+  padding: 18px 12px;
+  border: none;
+  position: relative;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+#th-percentage::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Percentage inputs - centered vertically */
+input[id^="ingredient_percentage_"] {
+  width: auto;
+  min-width: 40px;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  height: 40px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/* Percentage outputs - centered vertically */
+output[id^="ingredient_percentage_"] {
+  display: inline-block;
+  min-width: 70px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-charcoal);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-gentle);
+  border: 1px solid #d1d5db;
+  height: 40px;
+  line-height: 24px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/* Table cells in percentage column */
+td:nth-child(3) {
+  vertical-align: middle;
+  text-align: center;
+}
