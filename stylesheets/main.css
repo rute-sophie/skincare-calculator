@@ -284,7 +284,7 @@ input[id^="ingredient_cost_"] {
   padding: 8px 12px;
 }
 
-/* Ingredient name inputs - consistent border size */
+/* Ingredient name inputs - updated sizing for oil soluble active placeholder */
 .ingredient-text-editable {
   width: fit-content;
   min-width: 300px;
@@ -306,7 +306,7 @@ input[id^="ingredient_cost_"] {
   width: fit-content;
 }
 
-/* Specific sizing for different placeholder lengths - updated with longer widths */
+/* Specific sizing for different placeholder lengths - updated for oil soluble active */
 .ingredient-text-editable[placeholder*="Insert name of oil/ester/butter"] {
   width: 400px;
 }
@@ -315,12 +315,12 @@ input[id^="ingredient_cost_"] {
   width: 380px;
 }
 
-.ingredient-text-editable[placeholder*="oil soluble active"] {
-  width: 360px;
+.ingredient-text-editable[placeholder*="1% or less of an oil soluble active"] {
+  width: 440px;
 }
 
 .ingredient-text-editable[placeholder*="Fragrance/essential oil"] {
-  width: 340px;
+  width: 420px;
 }
 
 .ingredient-text-editable[placeholder*="oil soluble heat sensitive"] {
@@ -517,8 +517,12 @@ tr:hover td {
   z-index: 1;
 }
 
-/* Row styling - Updated with pastel yellow for oil rows */
+/* Row styling - Updated to extend phase colors across all columns */
 .water-rows {
+  background: linear-gradient(135deg, rgba(212, 230, 247, 0.1), rgba(200, 223, 240, 0.05));
+}
+
+.water-rows td {
   background: linear-gradient(135deg, rgba(212, 230, 247, 0.1), rgba(200, 223, 240, 0.05));
 }
 
@@ -526,8 +530,29 @@ tr:hover td {
   background: linear-gradient(135deg, rgba(247, 244, 212, 0.1), rgba(240, 237, 200, 0.05));
 }
 
+.oil-rows td {
+  background: linear-gradient(135deg, rgba(247, 244, 212, 0.1), rgba(240, 237, 200, 0.05));
+}
+
 .cooldown-rows {
   background: linear-gradient(135deg, rgba(232, 238, 242, 0.1), rgba(216, 224, 230, 0.05));
+}
+
+.cooldown-rows td {
+  background: linear-gradient(135deg, rgba(232, 238, 242, 0.1), rgba(216, 224, 230, 0.05));
+}
+
+/* Override hover effects to maintain phase colors */
+.water-rows:hover td {
+  background: linear-gradient(135deg, rgba(212, 230, 247, 0.15), rgba(200, 223, 240, 0.1));
+}
+
+.oil-rows:hover td {
+  background: linear-gradient(135deg, rgba(247, 244, 212, 0.15), rgba(240, 237, 200, 0.1));
+}
+
+.cooldown-rows:hover td {
+  background: linear-gradient(135deg, rgba(232, 238, 242, 0.15), rgba(216, 224, 230, 0.1));
 }
 
 /* Calculator buttons */
