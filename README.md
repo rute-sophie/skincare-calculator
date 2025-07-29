@@ -1,6 +1,6 @@
 # DIY SkinCare Lotion and Cream Chemistry Calculator 
 
-DIY Skincare Lotion and Cream Calculator made by Rute-Sophie for those who want to make their own skin lotions or creams in their own personal lab at home.
+DIY Skincare Lotion and Cream Calculator made by Rute-Sophie for those who want to make their own skin lotions or creams in their personal lab at home.
 
 ## Screenshot
 
